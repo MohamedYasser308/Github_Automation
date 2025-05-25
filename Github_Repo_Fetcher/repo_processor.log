@@ -1,0 +1,1849 @@
+2025-05-12 14:49:58,541 - WARNING - GITHUB_WEBHOOK_SECRET not found in environment variables
+2025-05-12 14:49:58,544 - INFO - Starting webhook server on port 5000
+2025-05-12 14:49:58,575 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.3.139:5000
+2025-05-12 14:49:58,577 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-12 15:11:28,308 - WARNING - GITHUB_WEBHOOK_SECRET not found in environment variables
+2025-05-12 15:11:28,315 - INFO - Starting webhook server on port 5000
+2025-05-12 15:11:28,341 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.3.139:5000
+2025-05-12 15:11:28,342 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-12 15:12:01,491 - INFO - 127.0.0.1 - - [12/May/2025 15:12:01] "GET /status HTTP/1.1" 200 -
+2025-05-12 15:13:15,688 - INFO - 127.0.0.1 - - [12/May/2025 15:13:15] "[35m[1mPOST /webhook/https://github.com/Salma-macber/react-app HTTP/1.1[0m" 202 -
+2025-05-12 15:13:15,689 - INFO - Starting repository processing: https://github.com/Salma-macber/react-app.git
+2025-05-12 15:13:15,692 - INFO - Running github_repo_cloner.py with args: ('https://github.com/Salma-macber/react-app.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher')
+2025-05-12 15:13:19,554 - INFO - github_repo_cloner.py output: 
+2025-05-12 15:13:19,555 - WARNING - github_repo_cloner.py stderr: 2025-05-12 15:13:17,407 - INFO - Successfully loaded GitHub token from .env file
+2025-05-12 15:13:17,819 - INFO - Cloning repository to: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\react-app
+2025-05-12 15:13:19,454 - INFO - Successfully cloned repository to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\react-app
+
+2025-05-12 15:13:19,556 - INFO - Running file_classifier.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\react-app',)
+2025-05-12 15:13:27,690 - INFO - file_classifier.py output: 
+Repository Classification Summary:
+==================================================
+Total Files Classified: 85
+
+Languages Found:
+- TypeScript: 1 files
+
+Frameworks Found:
+- react: 1 files
+
+Classification results have been saved in the repository's 'Classifier' directory:
+- Latest JSON report: Classifier/file_classification_latest.json
+- Latest Word document: Classifier/file_classification_latest.docx
+
+Use --list-versions to see all classification versions
+
+2025-05-12 15:13:27,692 - WARNING - file_classifier.py stderr: 2025-05-12 15:13:20,277 - INFO - Classifying files in repository: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\react-app
+2025-05-12 15:13:27,656 - INFO - Classification results saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\react-app\Classifier
+2025-05-12 15:13:27,656 - INFO - Version 1 created at 20250512_151326
+
+2025-05-12 15:13:27,693 - INFO - Running project_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\react-app',)
+2025-05-12 15:13:43,605 - INFO - project_documentation_generator.py output: 
+Project Logic Documentation Generated Successfully!
+==================================================
+Documentation file: Logic Understanding/project_logic_documentation_v1_0115a1f6_20250512_151343.docx
+Latest version: Logic Understanding/project_logic_documentation_latest.docx
+
+The documentation includes:
+• Project Description
+• Core Functionality
+• Key Features
+
+2025-05-12 15:13:43,608 - WARNING - project_documentation_generator.py stderr: 2025-05-12 15:13:29,854 - INFO - Successfully initialized OpenAI client
+2025-05-12 15:13:29,856 - INFO - Generating documentation...
+2025-05-12 15:13:29,856 - INFO - Starting repository analysis: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\react-app
+2025-05-12 15:13:29,856 - INFO - Found application directory: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\react-app\app
+2025-05-12 15:13:29,859 - INFO - Detected framework: None
+2025-05-12 15:13:36,391 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 15:13:43,230 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 15:13:43,232 - INFO - Repository analysis complete. Analyzed 1 files
+2025-05-12 15:13:43,386 - INFO - Documentation saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\react-app\Logic Understanding\project_logic_documentation_v1_0115a1f6_20250512_151343.docx
+
+2025-05-12 15:13:43,610 - INFO - Running uat_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\react-app',)
+2025-05-12 15:14:19,761 - INFO - uat_documentation_generator.py output: 
+UAT Documentation Generated Successfully!
+==================================================
+Documentation file: UAT Documentation/uat_documentation_v1_0115a1f6_20250512_151419.docx
+Latest version: UAT Documentation/uat_documentation_latest.docx
+
+The documentation includes:
+• Original Project Documentation
+• Test Environments
+• Test Cases (by category)
+
+2025-05-12 15:14:19,763 - WARNING - uat_documentation_generator.py stderr: 2025-05-12 15:13:45,852 - INFO - Successfully initialized OpenAI client
+2025-05-12 15:13:45,853 - INFO - Generating UAT documentation...
+2025-05-12 15:13:45,883 - INFO - Successfully loaded project documentation
+2025-05-12 15:14:19,218 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 15:14:19,559 - INFO - UAT documentation saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\react-app\UAT Documentation\uat_documentation_v1_0115a1f6_20250512_151419.docx
+
+2025-05-12 15:14:19,764 - INFO - Running api_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\react-app',)
+2025-05-12 15:14:20,343 - ERROR - Error running api_documentation_generator.py: Command '['C:\\Python313\\python.exe', 'C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\api_documentation_generator.py', 'C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\react-app']' returned non-zero exit status 1.
+2025-05-12 15:14:20,344 - ERROR - Script output: 
+2025-05-12 15:14:20,344 - ERROR - Script error: 2025-05-12 15:14:20,276 - INFO - Generating API documentation...
+2025-05-12 15:14:20,277 - ERROR - routes directory not found at C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\react-app\routes
+2025-05-12 15:14:20,277 - ERROR - Configuration error: No route files found in the repository
+Traceback (most recent call last):
+  File "C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\api_documentation_generator.py", line 539, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\api_documentation_generator.py", line 516, in main
+    doc_file = parser.generate_api_documentation()
+  File "C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\api_documentation_generator.py", line 395, in generate_api_documentation
+    raise ValueError("No route files found in the repository")
+ValueError: No route files found in the repository
+
+2025-05-12 15:14:50,361 - INFO - 127.0.0.1 - - [12/May/2025 15:14:50] "GET /status HTTP/1.1" 200 -
+2025-05-12 15:24:44,350 - WARNING - GITHUB_WEBHOOK_SECRET not found in environment variables
+2025-05-12 15:24:44,353 - INFO - Starting webhook server on port 5000
+2025-05-12 15:24:44,375 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.3.139:5000
+2025-05-12 15:24:44,376 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-12 15:26:35,922 - INFO - 127.0.0.1 - - [12/May/2025 15:26:35] "[35m[1mPOST /webhook/https://github.com/mostafa-gamal00/task_manager HTTP/1.1[0m" 202 -
+2025-05-12 15:26:35,922 - INFO - Starting repository processing: https://github.com/mostafa-gamal00/task_manager.git
+2025-05-12 15:26:35,925 - INFO - Running github_repo_cloner.py with args: ('https://github.com/mostafa-gamal00/task_manager.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher')
+2025-05-12 15:26:38,930 - INFO - github_repo_cloner.py output: 
+2025-05-12 15:26:38,930 - WARNING - github_repo_cloner.py stderr: 2025-05-12 15:26:37,105 - INFO - Successfully loaded GitHub token from .env file
+2025-05-12 15:26:37,523 - INFO - Cloning repository to: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-12 15:26:38,824 - INFO - Successfully cloned repository to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+
+2025-05-12 15:26:38,932 - INFO - Running file_classifier.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-12 15:26:45,108 - INFO - file_classifier.py output: 
+Repository Classification Summary:
+==================================================
+Total Files Classified: 90
+
+Languages Found:
+- JavaScript: 3 files
+- PHP: 77 files
+
+Frameworks Found:
+- laravel: 61 files
+
+Classification results have been saved in the repository's 'Classifier' directory:
+- Latest JSON report: Classifier/file_classification_latest.json
+- Latest Word document: Classifier/file_classification_latest.docx
+
+Use --list-versions to see all classification versions
+
+2025-05-12 15:26:45,111 - WARNING - file_classifier.py stderr: 2025-05-12 15:26:40,215 - INFO - Classifying files in repository: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-12 15:26:45,074 - INFO - Classification results saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\Classifier
+2025-05-12 15:26:45,074 - INFO - Version 1 created at 20250512_152644
+
+2025-05-12 15:26:45,112 - INFO - Running project_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-12 15:28:03,697 - INFO - project_documentation_generator.py output: 
+Project Logic Documentation Generated Successfully!
+==================================================
+Documentation file: Logic Understanding/project_logic_documentation_v1_96e7b689_20250512_152803.docx
+Latest version: Logic Understanding/project_logic_documentation_latest.docx
+
+The documentation includes:
+• Project Description
+• Core Functionality
+• Key Features
+
+2025-05-12 15:28:03,699 - WARNING - project_documentation_generator.py stderr: 2025-05-12 15:26:47,261 - INFO - Successfully initialized OpenAI client
+2025-05-12 15:26:47,263 - INFO - Generating documentation...
+2025-05-12 15:26:47,263 - INFO - Starting repository analysis: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-12 15:26:47,263 - INFO - Found application directory: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\app
+2025-05-12 15:26:47,284 - INFO - Detected framework: None
+2025-05-12 15:26:54,943 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 15:27:01,238 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 15:27:07,702 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 15:27:15,298 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 15:27:23,917 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 15:27:33,045 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 15:27:41,561 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 15:28:03,334 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 15:28:03,341 - INFO - Repository analysis complete. Analyzed 35 files
+2025-05-12 15:28:03,498 - INFO - Documentation saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\Logic Understanding\project_logic_documentation_v1_96e7b689_20250512_152803.docx
+
+2025-05-12 15:28:03,702 - INFO - Running uat_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-12 15:28:34,534 - INFO - uat_documentation_generator.py output: 
+UAT Documentation Generated Successfully!
+==================================================
+Documentation file: UAT Documentation/uat_documentation_v1_96e7b689_20250512_152834.docx
+Latest version: UAT Documentation/uat_documentation_latest.docx
+
+The documentation includes:
+• Original Project Documentation
+• Test Environments
+• Test Cases (by category)
+
+2025-05-12 15:28:34,536 - WARNING - uat_documentation_generator.py stderr: 2025-05-12 15:28:05,463 - INFO - Successfully initialized OpenAI client
+2025-05-12 15:28:05,465 - INFO - Generating UAT documentation...
+2025-05-12 15:28:05,494 - INFO - Successfully loaded project documentation
+2025-05-12 15:28:34,096 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 15:28:34,337 - INFO - UAT documentation saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\UAT Documentation\uat_documentation_v1_96e7b689_20250512_152834.docx
+
+2025-05-12 15:28:34,537 - INFO - Running api_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-12 15:28:35,275 - INFO - api_documentation_generator.py output: 
+API Documentation Generated Successfully!
+==================================================
+Documentation file: API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250512_152835.docx
+Latest version: API Documentation/latest/api_documentation_latest.docx
+
+The documentation includes:
+• API Overview
+• Endpoints by file
+• Detailed endpoint documentation
+• Parameters and return values
+• Usage examples
+
+Analysis data is stored in:
+• API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250512_152835.docx.json
+
+2025-05-12 15:28:35,277 - WARNING - api_documentation_generator.py stderr: 2025-05-12 15:28:34,962 - INFO - Generating API documentation...
+2025-05-12 15:28:34,962 - INFO - Searching for route files in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes
+2025-05-12 15:28:34,962 - INFO - Found 4 PHP route files:
+2025-05-12 15:28:34,963 - INFO -   - routes\api.php
+2025-05-12 15:28:34,963 - INFO -   - routes\channels.php
+2025-05-12 15:28:34,963 - INFO -   - routes\console.php
+2025-05-12 15:28:34,963 - INFO -   - routes\web.php
+2025-05-12 15:28:34,965 - INFO - Found 19 routes in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\api.php
+2025-05-12 15:28:34,966 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\channels.php
+2025-05-12 15:28:34,966 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\console.php
+2025-05-12 15:28:34,966 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\web.php
+2025-05-12 15:28:35,231 - INFO - API documentation saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250512_152835.docx
+2025-05-12 15:28:35,231 - INFO - Latest version available at C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\API Documentation\latest\api_documentation_latest.docx
+2025-05-12 15:28:35,232 - INFO - Analysis data saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250512_152835.docx.json
+
+2025-05-12 15:28:35,280 - INFO - Running repo_delete.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager', '--force')
+2025-05-12 15:29:26,518 - INFO - repo_delete.py output: 
+Repository Deleted Successfully!
+==================================================
+Archives location: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\Archives
+Repository archives: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\Archives\task_manager
+
+Archived folders:
+• API Documentation
+• Classifier
+• Logic Understanding
+• UAT Documentation
+
+2025-05-12 15:29:26,519 - WARNING - repo_delete.py stderr: 2025-05-12 15:28:35,466 - INFO - Archived API Documentation to API Documentation_v1_20250512_152835.zip
+2025-05-12 15:28:35,475 - INFO - Archived Classifier to Classifier_v1_20250512_152835.zip
+2025-05-12 15:28:35,480 - INFO - Archived Logic Understanding to Logic Understanding_v1_20250512_152835.zip
+2025-05-12 15:28:35,506 - INFO - Archived UAT Documentation to UAT Documentation_v1_20250512_152835.zip
+2025-05-12 15:28:35,506 - INFO - Preparing to force delete repository: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-12 15:29:26,439 - INFO - Removing .git directory...
+2025-05-12 15:29:26,454 - INFO - Removing repository files...
+2025-05-12 15:29:26,500 - INFO - Repository deleted successfully!
+
+2025-05-12 15:29:26,520 - INFO - Repository processing completed successfully
+2025-05-12 15:32:12,759 - INFO - 127.0.0.1 - - [12/May/2025 15:32:12] "[35m[1mPOST /webhook/https://github.com/abdelghafarhelala/gym_app HTTP/1.1[0m" 202 -
+2025-05-12 15:32:12,759 - INFO - Starting repository processing: https://github.com/abdelghafarhelala/gym_app.git
+2025-05-12 15:32:12,760 - INFO - Running github_repo_cloner.py with args: ('https://github.com/abdelghafarhelala/gym_app.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher')
+2025-05-12 15:32:16,368 - INFO - github_repo_cloner.py output: 
+2025-05-12 15:32:16,368 - WARNING - github_repo_cloner.py stderr: 2025-05-12 15:32:13,948 - INFO - Successfully loaded GitHub token from .env file
+2025-05-12 15:32:14,388 - INFO - Cloning repository to: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\gym_app
+2025-05-12 15:32:16,278 - INFO - Successfully cloned repository to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\gym_app
+
+2025-05-12 15:32:16,369 - INFO - Running file_classifier.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\gym_app',)
+2025-05-12 15:32:33,934 - INFO - file_classifier.py output: 
+Repository Classification Summary:
+==================================================
+Total Files Classified: 189
+
+Languages Found:
+
+Frameworks Found:
+
+Classification results have been saved in the repository's 'Classifier' directory:
+- Latest JSON report: Classifier/file_classification_latest.json
+- Latest Word document: Classifier/file_classification_latest.docx
+
+Use --list-versions to see all classification versions
+
+2025-05-12 15:32:33,935 - WARNING - file_classifier.py stderr: 2025-05-12 15:32:17,103 - INFO - Classifying files in repository: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\gym_app
+2025-05-12 15:32:33,902 - INFO - Classification results saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\gym_app\Classifier
+2025-05-12 15:32:33,902 - INFO - Version 1 created at 20250512_153231
+
+2025-05-12 15:32:33,937 - INFO - Running project_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\gym_app',)
+2025-05-12 15:32:36,035 - ERROR - Error running project_documentation_generator.py: Command '['C:\\Python313\\python.exe', 'C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\project_documentation_generator.py', 'C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\gym_app']' returned non-zero exit status 1.
+2025-05-12 15:32:36,036 - ERROR - Script output: 
+2025-05-12 15:32:36,036 - ERROR - Script error: 2025-05-12 15:32:35,865 - INFO - Successfully initialized OpenAI client
+2025-05-12 15:32:35,867 - INFO - Generating documentation...
+2025-05-12 15:32:35,868 - INFO - Starting repository analysis: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\gym_app
+2025-05-12 15:32:35,868 - ERROR - Error generating documentation: Could not find application directory (app, src, or application folder)
+Traceback (most recent call last):
+  File "C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\project_documentation_generator.py", line 765, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\project_documentation_generator.py", line 749, in main
+    doc_file = generator.generate_documentation()
+  File "C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\project_documentation_generator.py", line 518, in generate_documentation
+    self.analyze_repository()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\project_documentation_generator.py", line 420, in analyze_repository
+    raise ValueError("Could not find application directory (app, src, or application folder)")
+ValueError: Could not find application directory (app, src, or application folder)
+
+2025-05-13 12:43:16,224 - WARNING - GITHUB_WEBHOOK_SECRET not found in environment variables
+2025-05-13 12:46:02,867 - INFO - Starting webhook server on port 5000
+2025-05-13 12:46:02,919 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.3.139:5000
+2025-05-13 12:46:02,920 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-13 12:47:12,848 - INFO - 127.0.0.1 - - [13/May/2025 12:47:12] "[31m[1mGET /webhook/https://github.com/mostafa-gamal00/task_manager/REF15cD HTTP/1.1[0m" 405 -
+2025-05-13 12:47:12,965 - INFO - 127.0.0.1 - - [13/May/2025 12:47:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-13 12:48:24,069 - INFO - 127.0.0.1 - - [13/May/2025 12:48:24] "[35m[1mPOST /webhook/https://github.com/mostafa-gamal00/task_manager/REF15cD HTTP/1.1[0m" 202 -
+2025-05-13 12:48:24,070 - INFO - Starting repository processing: https://github.com/mostafa-gamal00/task_manager.git
+2025-05-13 12:48:24,072 - INFO - Running github_repo_cloner.py with args: ('https://github.com/mostafa-gamal00/task_manager.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher')
+2025-05-13 12:48:29,747 - INFO - github_repo_cloner.py output: 
+2025-05-13 12:48:29,748 - WARNING - github_repo_cloner.py stderr: 2025-05-13 12:48:27,390 - INFO - Successfully loaded GitHub token from .env file
+2025-05-13 12:48:27,841 - INFO - Cloning repository to: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-13 12:48:29,615 - INFO - Successfully cloned repository to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+
+2025-05-13 12:48:29,750 - INFO - Running file_classifier.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-13 12:48:36,608 - INFO - file_classifier.py output: 
+Repository Classification Summary:
+==================================================
+Total Files Classified: 90
+
+Languages Found:
+- JavaScript: 3 files
+- PHP: 77 files
+
+Frameworks Found:
+- laravel: 61 files
+
+Classification results have been saved in the repository's 'Classifier' directory:
+- Latest JSON report: Classifier/file_classification_latest.json
+- Latest Word document: Classifier/file_classification_latest.docx
+
+Use --list-versions to see all classification versions
+
+2025-05-13 12:48:36,609 - WARNING - file_classifier.py stderr: 2025-05-13 12:48:30,657 - INFO - Classifying files in repository: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-13 12:48:36,577 - INFO - Classification results saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\Classifier
+2025-05-13 12:48:36,577 - INFO - Version 1 created at 20250513_124835
+
+2025-05-13 12:48:36,610 - INFO - Running project_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-13 12:49:54,773 - INFO - project_documentation_generator.py output: 
+Project Logic Documentation Generated Successfully!
+==================================================
+Documentation file: Logic Understanding/project_logic_documentation_v1_96e7b689_20250513_124954.docx
+Latest version: Logic Understanding/project_logic_documentation_latest.docx
+
+The documentation includes:
+• Project Description
+• Core Functionality
+• Key Features
+
+2025-05-13 12:49:54,775 - WARNING - project_documentation_generator.py stderr: 2025-05-13 12:48:39,916 - INFO - Successfully initialized OpenAI client
+2025-05-13 12:48:39,917 - INFO - Generating documentation...
+2025-05-13 12:48:39,917 - INFO - Starting repository analysis: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-13 12:48:39,917 - INFO - Found application directory: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\app
+2025-05-13 12:48:39,938 - INFO - Detected framework: None
+2025-05-13 12:48:49,801 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 12:48:57,547 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 12:49:02,838 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 12:49:15,095 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 12:49:23,441 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 12:49:31,825 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 12:49:41,615 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 12:49:54,391 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 12:49:54,405 - INFO - Repository analysis complete. Analyzed 35 files
+2025-05-13 12:49:54,561 - INFO - Documentation saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\Logic Understanding\project_logic_documentation_v1_96e7b689_20250513_124954.docx
+
+2025-05-13 12:49:54,778 - INFO - Running uat_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-13 12:50:33,470 - INFO - uat_documentation_generator.py output: 
+UAT Documentation Generated Successfully!
+==================================================
+Documentation file: UAT Documentation/uat_documentation_v1_96e7b689_20250513_125033.docx
+Latest version: UAT Documentation/uat_documentation_latest.docx
+
+The documentation includes:
+• Original Project Documentation
+• Test Environments
+• Test Cases (by category)
+
+2025-05-13 12:50:33,471 - WARNING - uat_documentation_generator.py stderr: 2025-05-13 12:49:56,783 - INFO - Successfully initialized OpenAI client
+2025-05-13 12:49:56,784 - INFO - Generating UAT documentation...
+2025-05-13 12:49:56,810 - INFO - Successfully loaded project documentation
+2025-05-13 12:50:33,010 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 12:50:33,275 - INFO - UAT documentation saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\UAT Documentation\uat_documentation_v1_96e7b689_20250513_125033.docx
+
+2025-05-13 12:50:33,472 - INFO - Running api_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-13 12:50:34,279 - INFO - api_documentation_generator.py output: 
+API Documentation Generated Successfully!
+==================================================
+Documentation file: API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250513_125034.docx
+Latest version: API Documentation/latest/api_documentation_latest.docx
+
+The documentation includes:
+• API Overview
+• Endpoints by file
+• Detailed endpoint documentation
+• Parameters and return values
+• Usage examples
+
+Analysis data is stored in:
+• API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250513_125034.docx.json
+
+2025-05-13 12:50:34,281 - WARNING - api_documentation_generator.py stderr: 2025-05-13 12:50:33,906 - INFO - Generating API documentation...
+2025-05-13 12:50:33,906 - INFO - Searching for route files in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes
+2025-05-13 12:50:33,907 - INFO - Found 4 PHP route files:
+2025-05-13 12:50:33,907 - INFO -   - routes\api.php
+2025-05-13 12:50:33,907 - INFO -   - routes\channels.php
+2025-05-13 12:50:33,907 - INFO -   - routes\console.php
+2025-05-13 12:50:33,907 - INFO -   - routes\web.php
+2025-05-13 12:50:33,909 - INFO - Found 19 routes in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\api.php
+2025-05-13 12:50:33,909 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\channels.php
+2025-05-13 12:50:33,910 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\console.php
+2025-05-13 12:50:33,910 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\web.php
+2025-05-13 12:50:34,223 - INFO - API documentation saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250513_125034.docx
+2025-05-13 12:50:34,223 - INFO - Latest version available at C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\API Documentation\latest\api_documentation_latest.docx
+2025-05-13 12:50:34,223 - INFO - Analysis data saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250513_125034.docx.json
+
+2025-05-13 12:50:34,285 - INFO - Running repo_delete.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager', '--force')
+2025-05-13 12:51:20,412 - INFO - repo_delete.py output: 
+Repository Deleted Successfully!
+==================================================
+Archives location: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\Archives
+Repository archives: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\Archives\task_manager
+
+Archived folders:
+• API Documentation
+• Classifier
+• Logic Understanding
+• UAT Documentation
+
+2025-05-13 12:51:20,415 - WARNING - repo_delete.py stderr: 2025-05-13 12:50:34,522 - INFO - Archived API Documentation to API Documentation_v1_20250513_125034.zip
+2025-05-13 12:50:34,571 - INFO - Archived Classifier to Classifier_v1_20250513_125034.zip
+2025-05-13 12:50:34,587 - INFO - Archived Logic Understanding to Logic Understanding_v1_20250513_125034.zip
+2025-05-13 12:50:34,613 - INFO - Archived UAT Documentation to UAT Documentation_v1_20250513_125034.zip
+2025-05-13 12:50:34,613 - INFO - Preparing to force delete repository: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-13 12:51:20,319 - INFO - Removing .git directory...
+2025-05-13 12:51:20,339 - INFO - Removing repository files...
+2025-05-13 12:51:20,389 - INFO - Repository deleted successfully!
+
+2025-05-13 12:51:20,416 - INFO - Running archive_sender.py with args: ('--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mo21998.app.n8n.cloud/webhook-test/testing', '--reference-id', 'REF15cD')
+2025-05-13 12:51:22,358 - INFO - archive_sender.py output: 2025-05-13 12:51:21,501 - INFO - Sending archives to https://mo21998.app.n8n.cloud/webhook-test/testing
+2025-05-13 12:51:22,292 - INFO - Archives sent successfully
+
+2025-05-13 12:51:22,359 - INFO - Repository processing completed successfully
+2025-05-13 13:18:38,905 - INFO - 127.0.0.1 - - [13/May/2025 13:18:38] "[35m[1mPOST /webhook/https://github.com/mostafa-gamal00/task_manager/REF15cAM HTTP/1.1[0m" 202 -
+2025-05-13 13:18:38,905 - INFO - Starting repository processing: https://github.com/mostafa-gamal00/task_manager.git
+2025-05-13 13:18:38,908 - INFO - Running github_repo_cloner.py with args: ('https://github.com/mostafa-gamal00/task_manager.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher')
+2025-05-13 13:18:43,118 - INFO - github_repo_cloner.py output: 
+2025-05-13 13:18:43,164 - WARNING - github_repo_cloner.py stderr: 2025-05-13 13:18:41,239 - INFO - Successfully loaded GitHub token from .env file
+2025-05-13 13:18:41,730 - INFO - Cloning repository to: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-13 13:18:43,009 - INFO - Successfully cloned repository to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+
+2025-05-13 13:18:43,241 - INFO - Running file_classifier.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-13 13:18:49,176 - INFO - file_classifier.py output: 
+Repository Classification Summary:
+==================================================
+Total Files Classified: 90
+
+Languages Found:
+- JavaScript: 3 files
+- PHP: 77 files
+
+Frameworks Found:
+- laravel: 61 files
+
+Classification results have been saved in the repository's 'Classifier' directory:
+- Latest JSON report: Classifier/file_classification_latest.json
+- Latest Word document: Classifier/file_classification_latest.docx
+
+Use --list-versions to see all classification versions
+
+2025-05-13 13:18:49,180 - WARNING - file_classifier.py stderr: 2025-05-13 13:18:44,430 - INFO - Classifying files in repository: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-13 13:18:49,119 - INFO - Classification results saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\Classifier
+2025-05-13 13:18:49,119 - INFO - Version 1 created at 20250513_131848
+
+2025-05-13 13:18:49,182 - INFO - Running project_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-13 13:19:35,948 - INFO - project_documentation_generator.py output: 
+Project Logic Documentation Generated Successfully!
+==================================================
+Documentation file: Logic Understanding/project_logic_documentation_v1_96e7b689_20250513_131935.docx
+Latest version: Logic Understanding/project_logic_documentation_latest.docx
+
+The documentation includes:
+• Project Description
+• Core Functionality
+• Key Features
+
+2025-05-13 13:19:35,950 - WARNING - project_documentation_generator.py stderr: 2025-05-13 13:18:52,346 - INFO - Successfully initialized OpenAI client
+2025-05-13 13:18:52,348 - INFO - Generating documentation...
+2025-05-13 13:18:52,348 - INFO - Starting repository analysis: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-13 13:18:52,348 - INFO - Found application directory: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\app
+2025-05-13 13:18:52,369 - INFO - Detected framework: None
+2025-05-13 13:18:55,832 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:19:00,524 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:19:04,925 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:19:10,336 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:19:15,125 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:19:20,126 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:19:25,344 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:19:35,621 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:19:35,624 - INFO - Repository analysis complete. Analyzed 35 files
+2025-05-13 13:19:35,750 - INFO - Documentation saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\Logic Understanding\project_logic_documentation_v1_96e7b689_20250513_131935.docx
+
+2025-05-13 13:19:35,953 - INFO - Running uat_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-13 13:20:16,943 - INFO - uat_documentation_generator.py output: 
+UAT Documentation Generated Successfully!
+==================================================
+Documentation file: UAT Documentation/uat_documentation_v1_96e7b689_20250513_132016.docx
+Latest version: UAT Documentation/uat_documentation_latest.docx
+
+The documentation includes:
+• Original Project Documentation
+• Test Environments
+• Test Cases (by category)
+
+2025-05-13 13:20:16,944 - WARNING - uat_documentation_generator.py stderr: 2025-05-13 13:19:38,143 - INFO - Successfully initialized OpenAI client
+2025-05-13 13:19:38,145 - INFO - Generating UAT documentation...
+2025-05-13 13:19:38,170 - INFO - Successfully loaded project documentation
+2025-05-13 13:20:16,292 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:20:16,747 - INFO - UAT documentation saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\UAT Documentation\uat_documentation_v1_96e7b689_20250513_132016.docx
+
+2025-05-13 13:20:16,945 - INFO - Running api_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-13 13:20:17,886 - INFO - api_documentation_generator.py output: 
+API Documentation Generated Successfully!
+==================================================
+Documentation file: API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250513_132017.docx
+Latest version: API Documentation/latest/api_documentation_latest.docx
+
+The documentation includes:
+• API Overview
+• Endpoints by file
+• Detailed endpoint documentation
+• Parameters and return values
+• Usage examples
+
+Analysis data is stored in:
+• API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250513_132017.docx.json
+
+2025-05-13 13:20:17,889 - WARNING - api_documentation_generator.py stderr: 2025-05-13 13:20:17,440 - INFO - Generating API documentation...
+2025-05-13 13:20:17,440 - INFO - Searching for route files in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes
+2025-05-13 13:20:17,441 - INFO - Found 4 PHP route files:
+2025-05-13 13:20:17,441 - INFO -   - routes\api.php
+2025-05-13 13:20:17,441 - INFO -   - routes\channels.php
+2025-05-13 13:20:17,441 - INFO -   - routes\console.php
+2025-05-13 13:20:17,441 - INFO -   - routes\web.php
+2025-05-13 13:20:17,443 - INFO - Found 19 routes in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\api.php
+2025-05-13 13:20:17,444 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\channels.php
+2025-05-13 13:20:17,444 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\console.php
+2025-05-13 13:20:17,444 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\web.php
+2025-05-13 13:20:17,826 - INFO - API documentation saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250513_132017.docx
+2025-05-13 13:20:17,826 - INFO - Latest version available at C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\API Documentation\latest\api_documentation_latest.docx
+2025-05-13 13:20:17,826 - INFO - Analysis data saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250513_132017.docx.json
+
+2025-05-13 13:20:17,891 - INFO - Running repo_delete.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager', '--force')
+2025-05-13 13:21:07,541 - INFO - repo_delete.py output: 
+Repository Deleted Successfully!
+==================================================
+Archives location: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\Archives
+Repository archives: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\Archives\task_manager
+
+Archived folders:
+• API Documentation
+• Classifier
+• Logic Understanding
+• UAT Documentation
+
+2025-05-13 13:21:07,542 - WARNING - repo_delete.py stderr: 2025-05-13 13:20:18,138 - INFO - Archived API Documentation to API Documentation_v1_20250513_132018.zip
+2025-05-13 13:20:18,185 - INFO - Archived Classifier to Classifier_v1_20250513_132018.zip
+2025-05-13 13:20:18,200 - INFO - Archived Logic Understanding to Logic Understanding_v1_20250513_132018.zip
+2025-05-13 13:20:18,225 - INFO - Archived UAT Documentation to UAT Documentation_v1_20250513_132018.zip
+2025-05-13 13:20:18,226 - INFO - Preparing to force delete repository: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-13 13:21:07,449 - INFO - Removing .git directory...
+2025-05-13 13:21:07,478 - INFO - Removing repository files...
+2025-05-13 13:21:07,522 - INFO - Repository deleted successfully!
+
+2025-05-13 13:21:07,543 - INFO - Running archive_sender.py with args: ('--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mo21998.app.n8n.cloud/webhook-test/testing', '--reference-id', 'REF15cAM')
+2025-05-13 13:21:09,345 - INFO - archive_sender.py output: 2025-05-13 13:21:08,665 - INFO - Sending archives to https://mo21998.app.n8n.cloud/webhook-test/testing
+2025-05-13 13:21:09,264 - INFO - Archives sent successfully
+
+2025-05-13 13:21:09,345 - INFO - Repository processing completed successfully
+2025-05-13 13:24:21,706 - INFO - 127.0.0.1 - - [13/May/2025 13:24:21] "[35m[1mPOST /webhook/https://github.com/mostafa-gamal00/task_manager/REF1789 HTTP/1.1[0m" 202 -
+2025-05-13 13:24:21,707 - INFO - Starting repository processing: https://github.com/mostafa-gamal00/task_manager.git
+2025-05-13 13:24:21,709 - INFO - Running github_repo_cloner.py with args: ('https://github.com/mostafa-gamal00/task_manager.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher')
+2025-05-13 13:24:25,425 - INFO - github_repo_cloner.py output: 
+2025-05-13 13:24:25,425 - WARNING - github_repo_cloner.py stderr: 2025-05-13 13:24:23,191 - INFO - Successfully loaded GitHub token from .env file
+2025-05-13 13:24:23,701 - INFO - Cloning repository to: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-13 13:24:25,332 - INFO - Successfully cloned repository to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+
+2025-05-13 13:24:25,426 - INFO - Running file_classifier.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-13 13:24:29,553 - INFO - file_classifier.py output: 
+Repository Classification Summary:
+==================================================
+Total Files Classified: 90
+
+Languages Found:
+- JavaScript: 3 files
+- PHP: 77 files
+
+Frameworks Found:
+- laravel: 61 files
+
+Classification results have been saved in the repository's 'Classifier' directory:
+- Latest JSON report: Classifier/file_classification_latest.json
+- Latest Word document: Classifier/file_classification_latest.docx
+
+Use --list-versions to see all classification versions
+
+2025-05-13 13:24:29,555 - WARNING - file_classifier.py stderr: 2025-05-13 13:24:25,820 - INFO - Classifying files in repository: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-13 13:24:29,519 - INFO - Classification results saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\Classifier
+2025-05-13 13:24:29,519 - INFO - Version 1 created at 20250513_132428
+
+2025-05-13 13:24:29,557 - INFO - Running project_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-13 13:25:21,941 - INFO - project_documentation_generator.py output: 
+Project Logic Documentation Generated Successfully!
+==================================================
+Documentation file: Logic Understanding/project_logic_documentation_v1_96e7b689_20250513_132521.docx
+Latest version: Logic Understanding/project_logic_documentation_latest.docx
+
+The documentation includes:
+• Project Description
+• Core Functionality
+• Key Features
+
+2025-05-13 13:25:21,942 - WARNING - project_documentation_generator.py stderr: 2025-05-13 13:24:32,014 - INFO - Successfully initialized OpenAI client
+2025-05-13 13:24:32,017 - INFO - Generating documentation...
+2025-05-13 13:24:32,017 - INFO - Starting repository analysis: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-13 13:24:32,017 - INFO - Found application directory: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\app
+2025-05-13 13:24:32,040 - INFO - Detected framework: None
+2025-05-13 13:24:35,657 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:24:40,918 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:24:45,149 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:24:50,307 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:24:55,203 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:24:59,802 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:25:04,634 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:25:21,581 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:25:21,609 - INFO - Repository analysis complete. Analyzed 35 files
+2025-05-13 13:25:21,744 - INFO - Documentation saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\Logic Understanding\project_logic_documentation_v1_96e7b689_20250513_132521.docx
+
+2025-05-13 13:25:21,944 - INFO - Running uat_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-13 13:25:55,831 - INFO - uat_documentation_generator.py output: 
+UAT Documentation Generated Successfully!
+==================================================
+Documentation file: UAT Documentation/uat_documentation_v1_96e7b689_20250513_132555.docx
+Latest version: UAT Documentation/uat_documentation_latest.docx
+
+The documentation includes:
+• Original Project Documentation
+• Test Environments
+• Test Cases (by category)
+
+2025-05-13 13:25:55,832 - WARNING - uat_documentation_generator.py stderr: 2025-05-13 13:25:23,888 - INFO - Successfully initialized OpenAI client
+2025-05-13 13:25:23,889 - INFO - Generating UAT documentation...
+2025-05-13 13:25:23,914 - INFO - Successfully loaded project documentation
+2025-05-13 13:25:55,365 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:25:55,635 - INFO - UAT documentation saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\UAT Documentation\uat_documentation_v1_96e7b689_20250513_132555.docx
+
+2025-05-13 13:25:55,833 - INFO - Running api_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager',)
+2025-05-13 13:25:56,647 - INFO - api_documentation_generator.py output: 
+API Documentation Generated Successfully!
+==================================================
+Documentation file: API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250513_132556.docx
+Latest version: API Documentation/latest/api_documentation_latest.docx
+
+The documentation includes:
+• API Overview
+• Endpoints by file
+• Detailed endpoint documentation
+• Parameters and return values
+• Usage examples
+
+Analysis data is stored in:
+• API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250513_132556.docx.json
+
+2025-05-13 13:25:56,650 - WARNING - api_documentation_generator.py stderr: 2025-05-13 13:25:56,269 - INFO - Generating API documentation...
+2025-05-13 13:25:56,269 - INFO - Searching for route files in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes
+2025-05-13 13:25:56,270 - INFO - Found 4 PHP route files:
+2025-05-13 13:25:56,270 - INFO -   - routes\api.php
+2025-05-13 13:25:56,270 - INFO -   - routes\channels.php
+2025-05-13 13:25:56,270 - INFO -   - routes\console.php
+2025-05-13 13:25:56,270 - INFO -   - routes\web.php
+2025-05-13 13:25:56,272 - INFO - Found 19 routes in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\api.php
+2025-05-13 13:25:56,272 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\channels.php
+2025-05-13 13:25:56,273 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\console.php
+2025-05-13 13:25:56,273 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\routes\web.php
+2025-05-13 13:25:56,590 - INFO - API documentation saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250513_132556.docx
+2025-05-13 13:25:56,590 - INFO - Latest version available at C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\API Documentation\latest\api_documentation_latest.docx
+2025-05-13 13:25:56,590 - INFO - Analysis data saved to C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250513_132556.docx.json
+
+2025-05-13 13:25:56,655 - INFO - Running repo_delete.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager', '--force')
+2025-05-13 13:26:47,751 - INFO - repo_delete.py output: 
+Repository Deleted Successfully!
+==================================================
+Archives location: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\Archives
+Repository archives: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\Archives\task_manager
+
+Archived folders:
+• API Documentation
+• Classifier
+• Logic Understanding
+• UAT Documentation
+
+2025-05-13 13:26:47,752 - WARNING - repo_delete.py stderr: 2025-05-13 13:25:56,850 - INFO - Archived API Documentation to API Documentation_v1_20250513_132556.zip
+2025-05-13 13:25:56,906 - INFO - Archived Classifier to Classifier_v1_20250513_132556.zip
+2025-05-13 13:25:56,925 - INFO - Archived Logic Understanding to Logic Understanding_v1_20250513_132556.zip
+2025-05-13 13:25:56,950 - INFO - Archived UAT Documentation to UAT Documentation_v1_20250513_132556.zip
+2025-05-13 13:25:56,951 - INFO - Preparing to force delete repository: C:\Users\moh16\OneDrive\Desktop\Github_Repo_Fetcher\task_manager
+2025-05-13 13:26:47,666 - INFO - Removing .git directory...
+2025-05-13 13:26:47,685 - INFO - Removing repository files...
+2025-05-13 13:26:47,728 - INFO - Repository deleted successfully!
+
+2025-05-13 13:26:47,755 - INFO - Running archive_sender.py with args: ('--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mo21998.app.n8n.cloud/webhook-test/testing', '--reference-id', 'REF1789')
+2025-05-13 13:26:49,867 - INFO - archive_sender.py output: 2025-05-13 13:26:48,921 - INFO - Sending archives to https://mo21998.app.n8n.cloud/webhook-test/testing
+2025-05-13 13:26:49,513 - INFO - Archives sent successfully
+
+2025-05-13 13:26:49,868 - INFO - Repository processing completed successfully
+2025-05-25 00:04:55,378 - INFO - Starting webhook server on port 5000
+2025-05-25 00:04:55,436 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.10:5000
+2025-05-25 00:04:55,438 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-25 00:06:05,242 - INFO - 127.0.0.1 - - [25/May/2025 00:06:05] "GET /status HTTP/1.1" 200 -
+2025-05-25 00:06:53,107 - INFO - 127.0.0.1 - - [25/May/2025 00:06:53] "[35m[1mPOST /webhook/https://github.com/mostafa-gamal00/task_manager/REF15cAM HTTP/1.1[0m" 202 -
+2025-05-25 00:06:53,107 - INFO - Starting repository processing: https://github.com/mostafa-gamal00/task_manager.git
+2025-05-25 00:06:53,108 - INFO - Running github_repo_cloner.py with args: ('https://github.com/mostafa-gamal00/task_manager.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher')
+2025-05-25 00:06:57,538 - INFO - github_repo_cloner.py output: 
+2025-05-25 00:06:57,538 - WARNING - github_repo_cloner.py stderr: 2025-05-25 00:06:54,515 - INFO - Successfully loaded GitHub token from .env file
+2025-05-25 00:06:55,487 - INFO - Cloning repository to: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:06:57,376 - INFO - Successfully cloned repository to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+
+2025-05-25 00:06:57,542 - INFO - Running file_classifier.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:07:02,827 - INFO - file_classifier.py output: 
+Repository Classification Summary:
+==================================================
+Total Files Classified: 90
+
+Languages Found:
+- JavaScript: 3 files
+- PHP: 77 files
+
+Frameworks Found:
+- laravel: 61 files
+
+Classification results have been saved in the repository's 'Classifier' directory:
+- Latest JSON report: Classifier/file_classification_latest.json
+- Latest Word document: Classifier/file_classification_latest.docx
+
+Use --list-versions to see all classification versions
+
+2025-05-25 00:07:02,830 - WARNING - file_classifier.py stderr: 2025-05-25 00:06:58,372 - INFO - Classifying files in repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:07:02,768 - INFO - Classification results saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Classifier
+2025-05-25 00:07:02,769 - INFO - Version 1 created at 20250525_000701
+
+2025-05-25 00:07:02,832 - INFO - Running project_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:07:46,801 - INFO - project_documentation_generator.py output: 
+Project Logic Documentation Generated Successfully!
+==================================================
+Documentation file: Logic Understanding/project_logic_documentation_v1_96e7b689_20250525_000746.docx
+Latest version: Logic Understanding/project_logic_documentation_latest.docx
+
+The documentation includes:
+• Project Description
+• Core Functionality
+• Key Features
+
+2025-05-25 00:07:46,803 - WARNING - project_documentation_generator.py stderr: 2025-05-25 00:07:07,451 - INFO - Successfully initialized OpenAI client
+2025-05-25 00:07:07,453 - INFO - Generating documentation...
+2025-05-25 00:07:07,453 - INFO - Starting repository analysis: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:07:07,453 - INFO - Found application directory: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\app
+2025-05-25 00:07:07,486 - INFO - Detected framework: None
+2025-05-25 00:07:11,423 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:07:15,390 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:07:19,403 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:07:23,371 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:07:27,550 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:07:32,634 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:07:37,397 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:07:46,370 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:07:46,373 - INFO - Repository analysis complete. Analyzed 35 files
+2025-05-25 00:07:46,571 - INFO - Documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Logic Understanding\project_logic_documentation_v1_96e7b689_20250525_000746.docx
+
+2025-05-25 00:07:46,806 - INFO - Running uat_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:08:13,713 - INFO - uat_documentation_generator.py output: 
+UAT Documentation Generated Successfully!
+==================================================
+Documentation file: UAT Documentation/uat_documentation_v1_96e7b689_20250525_000813.docx
+Latest version: UAT Documentation/uat_documentation_latest.docx
+
+The documentation includes:
+• Original Project Documentation
+• Test Environments
+• Test Cases (by category)
+
+2025-05-25 00:08:13,714 - WARNING - uat_documentation_generator.py stderr: 2025-05-25 00:07:49,172 - INFO - Successfully initialized OpenAI client
+2025-05-25 00:07:49,173 - INFO - Generating UAT documentation...
+2025-05-25 00:07:49,212 - INFO - Successfully loaded project documentation
+2025-05-25 00:08:13,152 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:08:13,468 - INFO - UAT documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\UAT Documentation\uat_documentation_v1_96e7b689_20250525_000813.docx
+
+2025-05-25 00:08:13,716 - INFO - Running api_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:08:14,599 - INFO - api_documentation_generator.py output: 
+API Documentation Generated Successfully!
+==================================================
+Documentation file: API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_000814.docx
+Latest version: API Documentation/latest/api_documentation_latest.docx
+
+The documentation includes:
+• API Overview
+• Endpoints by file
+• Detailed endpoint documentation
+• Parameters and return values
+• Usage examples
+
+Analysis data is stored in:
+• API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_000814.docx.json
+
+2025-05-25 00:08:14,601 - WARNING - api_documentation_generator.py stderr: 2025-05-25 00:08:14,239 - INFO - Generating API documentation...
+2025-05-25 00:08:14,239 - INFO - Searching for route files in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes
+2025-05-25 00:08:14,240 - INFO - Found 4 PHP route files:
+2025-05-25 00:08:14,240 - INFO -   - routes\api.php
+2025-05-25 00:08:14,240 - INFO -   - routes\channels.php
+2025-05-25 00:08:14,241 - INFO -   - routes\console.php
+2025-05-25 00:08:14,241 - INFO -   - routes\web.php
+2025-05-25 00:08:14,243 - INFO - Found 19 routes in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\api.php
+2025-05-25 00:08:14,243 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\channels.php
+2025-05-25 00:08:14,243 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\console.php
+2025-05-25 00:08:14,244 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\web.php
+2025-05-25 00:08:14,549 - INFO - API documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_000814.docx
+2025-05-25 00:08:14,550 - INFO - Latest version available at C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\latest\api_documentation_latest.docx
+2025-05-25 00:08:14,550 - INFO - Analysis data saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_000814.docx.json
+
+2025-05-25 00:08:14,607 - INFO - Running repo_delete.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--force')
+2025-05-25 00:08:49,025 - INFO - repo_delete.py output: 
+Repository Deleted Successfully!
+==================================================
+Archives location: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives
+Repository archives: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives\task_manager
+
+Archived folders:
+• API Documentation
+• Classifier
+• Logic Understanding
+• UAT Documentation
+
+2025-05-25 00:08:49,028 - WARNING - repo_delete.py stderr: 2025-05-25 00:08:14,865 - INFO - Archived API Documentation to API Documentation_v1_20250525_000814.zip
+2025-05-25 00:08:14,919 - INFO - Archived Classifier to Classifier_v1_20250525_000814.zip
+2025-05-25 00:08:14,936 - INFO - Archived Logic Understanding to Logic Understanding_v1_20250525_000814.zip
+2025-05-25 00:08:14,968 - INFO - Archived UAT Documentation to UAT Documentation_v1_20250525_000814.zip
+2025-05-25 00:08:14,969 - INFO - Preparing to force delete repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:08:48,928 - INFO - Removing .git directory...
+2025-05-25 00:08:48,950 - INFO - Removing repository files...
+2025-05-25 00:08:49,005 - INFO - Repository deleted successfully!
+
+2025-05-25 00:08:49,030 - INFO - Running archive_sender.py with args: ('--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mon198.app.n8n.cloud/webhook/eba0ef66', '--reference-id', 'REF15cAM')
+2025-05-25 00:08:50,824 - ERROR - Error running archive_sender.py: Command '['C:\\Python313\\python.exe', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\archive_sender.py', '--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mon198.app.n8n.cloud/webhook/eba0ef66', '--reference-id', 'REF15cAM']' returned non-zero exit status 1.
+2025-05-25 00:08:50,825 - ERROR - Script output: 2025-05-25 00:08:49,472 - INFO - Sending archives to https://mon198.app.n8n.cloud/webhook/eba0ef66
+2025-05-25 00:08:50,780 - ERROR - Failed to send archives. Status code: 404
+2025-05-25 00:08:50,780 - ERROR - Response: {"code":404,"message":"The requested webhook \"POST eba0ef66\" is not registered.","hint":"The workflow must be active for a production URL to run successfully. You can activate the workflow using the toggle in the top-right of the editor. Note that unlike test URL calls, production URL calls aren't shown on the canvas (only in the executions list)"}
+
+2025-05-25 00:08:50,826 - ERROR - Script error: 
+2025-05-25 00:08:50,827 - WARNING - Failed to send archives, but repository processing is complete
+2025-05-25 00:08:50,827 - INFO - Repository processing completed successfully
+2025-05-25 00:18:30,696 - INFO - 127.0.0.1 - - [25/May/2025 00:18:30] "[31m[1mGET /webhook/https://github.com/mostafa-gamal00/task_manager/REF15cAM HTTP/1.1[0m" 405 -
+2025-05-25 00:22:05,140 - INFO - 127.0.0.1 - - [25/May/2025 00:22:05] "[35m[1mPOST /webhook/https://github.com/mostafa-gamal00/task_manager/REF15cAM HTTP/1.1[0m" 202 -
+2025-05-25 00:22:05,140 - INFO - Starting repository processing: https://github.com/mostafa-gamal00/task_manager.git
+2025-05-25 00:22:05,147 - INFO - Running github_repo_cloner.py with args: ('https://github.com/mostafa-gamal00/task_manager.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher')
+2025-05-25 00:22:08,788 - INFO - github_repo_cloner.py output: 
+2025-05-25 00:22:08,789 - WARNING - github_repo_cloner.py stderr: 2025-05-25 00:22:06,152 - INFO - Successfully loaded GitHub token from .env file
+2025-05-25 00:22:07,155 - INFO - Cloning repository to: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:22:08,576 - INFO - Successfully cloned repository to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+
+2025-05-25 00:22:08,793 - INFO - Running file_classifier.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:22:14,232 - INFO - file_classifier.py output: 
+Repository Classification Summary:
+==================================================
+Total Files Classified: 90
+
+Languages Found:
+- JavaScript: 3 files
+- PHP: 77 files
+
+Frameworks Found:
+- laravel: 61 files
+
+Classification results have been saved in the repository's 'Classifier' directory:
+- Latest JSON report: Classifier/file_classification_latest.json
+- Latest Word document: Classifier/file_classification_latest.docx
+
+Use --list-versions to see all classification versions
+
+2025-05-25 00:22:14,235 - WARNING - file_classifier.py stderr: 2025-05-25 00:22:09,779 - INFO - Classifying files in repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:22:14,174 - INFO - Classification results saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Classifier
+2025-05-25 00:22:14,174 - INFO - Version 1 created at 20250525_002212
+
+2025-05-25 00:22:14,237 - INFO - Running project_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:22:57,279 - INFO - project_documentation_generator.py output: 
+Project Logic Documentation Generated Successfully!
+==================================================
+Documentation file: Logic Understanding/project_logic_documentation_v1_96e7b689_20250525_002257.docx
+Latest version: Logic Understanding/project_logic_documentation_latest.docx
+
+The documentation includes:
+• Project Description
+• Core Functionality
+• Key Features
+
+2025-05-25 00:22:57,280 - WARNING - project_documentation_generator.py stderr: 2025-05-25 00:22:17,251 - INFO - Successfully initialized OpenAI client
+2025-05-25 00:22:17,253 - INFO - Generating documentation...
+2025-05-25 00:22:17,253 - INFO - Starting repository analysis: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:22:17,253 - INFO - Found application directory: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\app
+2025-05-25 00:22:17,280 - INFO - Detected framework: None
+2025-05-25 00:22:20,645 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:22:24,784 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:22:28,455 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:22:32,802 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:22:36,827 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:22:40,458 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:22:44,814 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:22:56,872 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:22:56,875 - INFO - Repository analysis complete. Analyzed 35 files
+2025-05-25 00:22:57,044 - INFO - Documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Logic Understanding\project_logic_documentation_v1_96e7b689_20250525_002257.docx
+
+2025-05-25 00:22:57,284 - INFO - Running uat_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:23:25,303 - INFO - uat_documentation_generator.py output: 
+UAT Documentation Generated Successfully!
+==================================================
+Documentation file: UAT Documentation/uat_documentation_v1_96e7b689_20250525_002325.docx
+Latest version: UAT Documentation/uat_documentation_latest.docx
+
+The documentation includes:
+• Original Project Documentation
+• Test Environments
+• Test Cases (by category)
+
+2025-05-25 00:23:25,305 - WARNING - uat_documentation_generator.py stderr: 2025-05-25 00:22:59,738 - INFO - Successfully initialized OpenAI client
+2025-05-25 00:22:59,740 - INFO - Generating UAT documentation...
+2025-05-25 00:22:59,774 - INFO - Successfully loaded project documentation
+2025-05-25 00:23:24,722 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:23:25,071 - INFO - UAT documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\UAT Documentation\uat_documentation_v1_96e7b689_20250525_002325.docx
+
+2025-05-25 00:23:25,307 - INFO - Running api_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:23:26,194 - INFO - api_documentation_generator.py output: 
+API Documentation Generated Successfully!
+==================================================
+Documentation file: API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_002326.docx
+Latest version: API Documentation/latest/api_documentation_latest.docx
+
+The documentation includes:
+• API Overview
+• Endpoints by file
+• Detailed endpoint documentation
+• Parameters and return values
+• Usage examples
+
+Analysis data is stored in:
+• API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_002326.docx.json
+
+2025-05-25 00:23:26,200 - WARNING - api_documentation_generator.py stderr: 2025-05-25 00:23:25,820 - INFO - Generating API documentation...
+2025-05-25 00:23:25,820 - INFO - Searching for route files in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes
+2025-05-25 00:23:25,821 - INFO - Found 4 PHP route files:
+2025-05-25 00:23:25,821 - INFO -   - routes\api.php
+2025-05-25 00:23:25,821 - INFO -   - routes\channels.php
+2025-05-25 00:23:25,821 - INFO -   - routes\console.php
+2025-05-25 00:23:25,822 - INFO -   - routes\web.php
+2025-05-25 00:23:25,827 - INFO - Found 19 routes in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\api.php
+2025-05-25 00:23:25,828 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\channels.php
+2025-05-25 00:23:25,829 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\console.php
+2025-05-25 00:23:25,829 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\web.php
+2025-05-25 00:23:26,150 - INFO - API documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_002326.docx
+2025-05-25 00:23:26,150 - INFO - Latest version available at C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\latest\api_documentation_latest.docx
+2025-05-25 00:23:26,150 - INFO - Analysis data saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_002326.docx.json
+
+2025-05-25 00:23:26,206 - INFO - Running repo_delete.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--force')
+2025-05-25 00:23:58,570 - INFO - repo_delete.py output: 
+Repository Deleted Successfully!
+==================================================
+Archives location: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives
+Repository archives: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives\task_manager
+
+Archived folders:
+• API Documentation
+• Classifier
+• Logic Understanding
+• UAT Documentation
+
+2025-05-25 00:23:58,571 - WARNING - repo_delete.py stderr: 2025-05-25 00:23:26,404 - INFO - Archived API Documentation to API Documentation_v2_20250525_002326.zip
+2025-05-25 00:23:26,458 - INFO - Archived Classifier to Classifier_v2_20250525_002326.zip
+2025-05-25 00:23:26,478 - INFO - Archived Logic Understanding to Logic Understanding_v2_20250525_002326.zip
+2025-05-25 00:23:26,505 - INFO - Archived UAT Documentation to UAT Documentation_v2_20250525_002326.zip
+2025-05-25 00:23:26,506 - INFO - Preparing to force delete repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:23:58,484 - INFO - Removing .git directory...
+2025-05-25 00:23:58,510 - INFO - Removing repository files...
+2025-05-25 00:23:58,551 - INFO - Repository deleted successfully!
+
+2025-05-25 00:23:58,573 - INFO - Running archive_sender.py with args: ('--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mon198.app.n8n.cloud/webhook/eba0ef66', '--reference-id', 'REF15cAM')
+2025-05-25 00:24:00,628 - ERROR - Error running archive_sender.py: Command '['C:\\Python313\\python.exe', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\archive_sender.py', '--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mon198.app.n8n.cloud/webhook/eba0ef66', '--reference-id', 'REF15cAM']' returned non-zero exit status 1.
+2025-05-25 00:24:00,628 - ERROR - Script output: 2025-05-25 00:23:58,989 - INFO - Sending archives to https://mon198.app.n8n.cloud/webhook/eba0ef66
+2025-05-25 00:24:00,487 - ERROR - Failed to send archives. Status code: 404
+2025-05-25 00:24:00,487 - ERROR - Response: {"code":404,"message":"The requested webhook \"POST eba0ef66\" is not registered.","hint":"The workflow must be active for a production URL to run successfully. You can activate the workflow using the toggle in the top-right of the editor. Note that unlike test URL calls, production URL calls aren't shown on the canvas (only in the executions list)"}
+
+2025-05-25 00:24:00,630 - ERROR - Script error: 
+2025-05-25 00:24:00,631 - WARNING - Failed to send archives, but repository processing is complete
+2025-05-25 00:24:00,631 - INFO - Repository processing completed successfully
+2025-05-25 00:27:15,733 - INFO - 127.0.0.1 - - [25/May/2025 00:27:15] "[35m[1mPOST /webhook/https://github.com/mostafa-gamal00/task_manager/REF15cAM HTTP/1.1[0m" 202 -
+2025-05-25 00:27:15,734 - INFO - Starting repository processing: https://github.com/mostafa-gamal00/task_manager.git
+2025-05-25 00:27:15,735 - INFO - Running github_repo_cloner.py with args: ('https://github.com/mostafa-gamal00/task_manager.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher')
+2025-05-25 00:27:18,677 - INFO - github_repo_cloner.py output: 
+2025-05-25 00:27:18,678 - WARNING - github_repo_cloner.py stderr: 2025-05-25 00:27:16,405 - INFO - Successfully loaded GitHub token from .env file
+2025-05-25 00:27:17,295 - INFO - Cloning repository to: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:27:18,579 - INFO - Successfully cloned repository to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+
+2025-05-25 00:27:18,679 - INFO - Running file_classifier.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:27:23,426 - INFO - file_classifier.py output: 
+Repository Classification Summary:
+==================================================
+Total Files Classified: 90
+
+Languages Found:
+- JavaScript: 3 files
+- PHP: 77 files
+
+Frameworks Found:
+- laravel: 61 files
+
+Classification results have been saved in the repository's 'Classifier' directory:
+- Latest JSON report: Classifier/file_classification_latest.json
+- Latest Word document: Classifier/file_classification_latest.docx
+
+Use --list-versions to see all classification versions
+
+2025-05-25 00:27:23,429 - WARNING - file_classifier.py stderr: 2025-05-25 00:27:19,486 - INFO - Classifying files in repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:27:23,393 - INFO - Classification results saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Classifier
+2025-05-25 00:27:23,393 - INFO - Version 1 created at 20250525_002722
+
+2025-05-25 00:27:23,429 - INFO - Running project_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:28:13,530 - INFO - project_documentation_generator.py output: 
+Project Logic Documentation Generated Successfully!
+==================================================
+Documentation file: Logic Understanding/project_logic_documentation_v1_96e7b689_20250525_002813.docx
+Latest version: Logic Understanding/project_logic_documentation_latest.docx
+
+The documentation includes:
+• Project Description
+• Core Functionality
+• Key Features
+
+2025-05-25 00:28:13,532 - WARNING - project_documentation_generator.py stderr: 2025-05-25 00:27:26,047 - INFO - Successfully initialized OpenAI client
+2025-05-25 00:27:26,048 - INFO - Generating documentation...
+2025-05-25 00:27:26,048 - INFO - Starting repository analysis: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:27:26,048 - INFO - Found application directory: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\app
+2025-05-25 00:27:26,075 - INFO - Detected framework: None
+2025-05-25 00:27:29,939 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:27:34,332 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:27:37,705 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:27:42,287 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:27:45,594 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:27:50,259 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:27:56,199 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:28:13,142 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:28:13,145 - INFO - Repository analysis complete. Analyzed 35 files
+2025-05-25 00:28:13,331 - INFO - Documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Logic Understanding\project_logic_documentation_v1_96e7b689_20250525_002813.docx
+
+2025-05-25 00:28:13,535 - INFO - Running uat_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:28:40,642 - INFO - uat_documentation_generator.py output: 
+UAT Documentation Generated Successfully!
+==================================================
+Documentation file: UAT Documentation/uat_documentation_v1_96e7b689_20250525_002840.docx
+Latest version: UAT Documentation/uat_documentation_latest.docx
+
+The documentation includes:
+• Original Project Documentation
+• Test Environments
+• Test Cases (by category)
+
+2025-05-25 00:28:40,643 - WARNING - uat_documentation_generator.py stderr: 2025-05-25 00:28:15,800 - INFO - Successfully initialized OpenAI client
+2025-05-25 00:28:15,801 - INFO - Generating UAT documentation...
+2025-05-25 00:28:15,830 - INFO - Successfully loaded project documentation
+2025-05-25 00:28:39,949 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:28:40,402 - INFO - UAT documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\UAT Documentation\uat_documentation_v1_96e7b689_20250525_002840.docx
+
+2025-05-25 00:28:40,645 - INFO - Running api_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:28:41,543 - INFO - api_documentation_generator.py output: 
+API Documentation Generated Successfully!
+==================================================
+Documentation file: API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_002841.docx
+Latest version: API Documentation/latest/api_documentation_latest.docx
+
+The documentation includes:
+• API Overview
+• Endpoints by file
+• Detailed endpoint documentation
+• Parameters and return values
+• Usage examples
+
+Analysis data is stored in:
+• API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_002841.docx.json
+
+2025-05-25 00:28:41,545 - WARNING - api_documentation_generator.py stderr: 2025-05-25 00:28:41,166 - INFO - Generating API documentation...
+2025-05-25 00:28:41,166 - INFO - Searching for route files in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes
+2025-05-25 00:28:41,167 - INFO - Found 4 PHP route files:
+2025-05-25 00:28:41,167 - INFO -   - routes\api.php
+2025-05-25 00:28:41,167 - INFO -   - routes\channels.php
+2025-05-25 00:28:41,167 - INFO -   - routes\console.php
+2025-05-25 00:28:41,167 - INFO -   - routes\web.php
+2025-05-25 00:28:41,169 - INFO - Found 19 routes in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\api.php
+2025-05-25 00:28:41,170 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\channels.php
+2025-05-25 00:28:41,170 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\console.php
+2025-05-25 00:28:41,171 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\web.php
+2025-05-25 00:28:41,489 - INFO - API documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_002841.docx
+2025-05-25 00:28:41,489 - INFO - Latest version available at C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\latest\api_documentation_latest.docx
+2025-05-25 00:28:41,489 - INFO - Analysis data saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_002841.docx.json
+
+2025-05-25 00:28:41,549 - INFO - Running repo_delete.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--force')
+2025-05-25 00:29:15,958 - INFO - repo_delete.py output: 
+Repository Deleted Successfully!
+==================================================
+Archives location: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives
+Repository archives: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives\task_manager
+
+Archived folders:
+• API Documentation
+• Classifier
+• Logic Understanding
+• UAT Documentation
+
+2025-05-25 00:29:15,959 - WARNING - repo_delete.py stderr: 2025-05-25 00:28:41,774 - INFO - Archived API Documentation to API Documentation_v3_20250525_002841.zip
+2025-05-25 00:28:41,828 - INFO - Archived Classifier to Classifier_v3_20250525_002841.zip
+2025-05-25 00:28:41,846 - INFO - Archived Logic Understanding to Logic Understanding_v3_20250525_002841.zip
+2025-05-25 00:28:41,877 - INFO - Archived UAT Documentation to UAT Documentation_v3_20250525_002841.zip
+2025-05-25 00:28:41,878 - INFO - Preparing to force delete repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:29:15,860 - INFO - Removing .git directory...
+2025-05-25 00:29:15,893 - INFO - Removing repository files...
+2025-05-25 00:29:15,937 - INFO - Repository deleted successfully!
+
+2025-05-25 00:29:15,961 - INFO - Running archive_sender.py with args: ('--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mon198.app.n8n.cloud/webhook/eba0ef66', '--reference-id', 'REF15cAM')
+2025-05-25 00:30:18,375 - ERROR - Error running archive_sender.py: Command '['C:\\Python313\\python.exe', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\archive_sender.py', '--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mon198.app.n8n.cloud/webhook/eba0ef66', '--reference-id', 'REF15cAM']' returned non-zero exit status 1.
+2025-05-25 00:30:18,375 - ERROR - Script output: 2025-05-25 00:29:16,388 - INFO - Sending archives to https://mon198.app.n8n.cloud/webhook/eba0ef66
+2025-05-25 00:30:18,331 - ERROR - Failed to send archives. Status code: 404
+2025-05-25 00:30:18,332 - ERROR - Response: !
+
+2025-05-25 00:30:18,375 - ERROR - Script error: 
+2025-05-25 00:30:18,376 - WARNING - Failed to send archives, but repository processing is complete
+2025-05-25 00:30:18,376 - INFO - Repository processing completed successfully
+2025-05-25 00:31:53,610 - INFO - 127.0.0.1 - - [25/May/2025 00:31:53] "[35m[1mPOST /webhook/https://github.com/mostafa-gamal00/task_manager/REF15cAM HTTP/1.1[0m" 202 -
+2025-05-25 00:31:53,610 - INFO - Starting repository processing: https://github.com/mostafa-gamal00/task_manager.git
+2025-05-25 00:31:53,612 - INFO - Running github_repo_cloner.py with args: ('https://github.com/mostafa-gamal00/task_manager.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher')
+2025-05-25 00:31:56,767 - INFO - github_repo_cloner.py output: 
+2025-05-25 00:31:56,768 - WARNING - github_repo_cloner.py stderr: 2025-05-25 00:31:54,297 - INFO - Successfully loaded GitHub token from .env file
+2025-05-25 00:31:55,234 - INFO - Cloning repository to: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:31:56,585 - INFO - Successfully cloned repository to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+
+2025-05-25 00:31:56,769 - INFO - Running file_classifier.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:32:01,107 - INFO - file_classifier.py output: 
+Repository Classification Summary:
+==================================================
+Total Files Classified: 90
+
+Languages Found:
+- JavaScript: 3 files
+- PHP: 77 files
+
+Frameworks Found:
+- laravel: 61 files
+
+Classification results have been saved in the repository's 'Classifier' directory:
+- Latest JSON report: Classifier/file_classification_latest.json
+- Latest Word document: Classifier/file_classification_latest.docx
+
+Use --list-versions to see all classification versions
+
+2025-05-25 00:32:01,109 - WARNING - file_classifier.py stderr: 2025-05-25 00:31:57,406 - INFO - Classifying files in repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:32:01,072 - INFO - Classification results saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Classifier
+2025-05-25 00:32:01,072 - INFO - Version 1 created at 20250525_003200
+
+2025-05-25 00:32:01,111 - INFO - Running project_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:32:40,140 - INFO - project_documentation_generator.py output: 
+Project Logic Documentation Generated Successfully!
+==================================================
+Documentation file: Logic Understanding/project_logic_documentation_v1_96e7b689_20250525_003239.docx
+Latest version: Logic Understanding/project_logic_documentation_latest.docx
+
+The documentation includes:
+• Project Description
+• Core Functionality
+• Key Features
+
+2025-05-25 00:32:40,141 - WARNING - project_documentation_generator.py stderr: 2025-05-25 00:32:03,555 - INFO - Successfully initialized OpenAI client
+2025-05-25 00:32:03,557 - INFO - Generating documentation...
+2025-05-25 00:32:03,557 - INFO - Starting repository analysis: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:32:03,557 - INFO - Found application directory: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\app
+2025-05-25 00:32:03,581 - INFO - Detected framework: None
+2025-05-25 00:32:07,271 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:32:10,984 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:32:14,249 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:32:18,431 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:32:22,324 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:32:26,613 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:32:31,350 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:32:39,805 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:32:39,808 - INFO - Repository analysis complete. Analyzed 35 files
+2025-05-25 00:32:39,938 - INFO - Documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Logic Understanding\project_logic_documentation_v1_96e7b689_20250525_003239.docx
+
+2025-05-25 00:32:40,144 - INFO - Running uat_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:33:02,138 - INFO - uat_documentation_generator.py output: 
+UAT Documentation Generated Successfully!
+==================================================
+Documentation file: UAT Documentation/uat_documentation_v1_96e7b689_20250525_003301.docx
+Latest version: UAT Documentation/uat_documentation_latest.docx
+
+The documentation includes:
+• Original Project Documentation
+• Test Environments
+• Test Cases (by category)
+
+2025-05-25 00:33:02,138 - WARNING - uat_documentation_generator.py stderr: 2025-05-25 00:32:42,340 - INFO - Successfully initialized OpenAI client
+2025-05-25 00:32:42,342 - INFO - Generating UAT documentation...
+2025-05-25 00:32:42,375 - INFO - Successfully loaded project documentation
+2025-05-25 00:33:01,534 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:33:01,887 - INFO - UAT documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\UAT Documentation\uat_documentation_v1_96e7b689_20250525_003301.docx
+
+2025-05-25 00:33:02,140 - INFO - Running api_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:33:03,023 - INFO - api_documentation_generator.py output: 
+API Documentation Generated Successfully!
+==================================================
+Documentation file: API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_003302.docx
+Latest version: API Documentation/latest/api_documentation_latest.docx
+
+The documentation includes:
+• API Overview
+• Endpoints by file
+• Detailed endpoint documentation
+• Parameters and return values
+• Usage examples
+
+Analysis data is stored in:
+• API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_003302.docx.json
+
+2025-05-25 00:33:03,026 - WARNING - api_documentation_generator.py stderr: 2025-05-25 00:33:02,661 - INFO - Generating API documentation...
+2025-05-25 00:33:02,662 - INFO - Searching for route files in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes
+2025-05-25 00:33:02,662 - INFO - Found 4 PHP route files:
+2025-05-25 00:33:02,662 - INFO -   - routes\api.php
+2025-05-25 00:33:02,663 - INFO -   - routes\channels.php
+2025-05-25 00:33:02,663 - INFO -   - routes\console.php
+2025-05-25 00:33:02,663 - INFO -   - routes\web.php
+2025-05-25 00:33:02,666 - INFO - Found 19 routes in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\api.php
+2025-05-25 00:33:02,666 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\channels.php
+2025-05-25 00:33:02,666 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\console.php
+2025-05-25 00:33:02,667 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\web.php
+2025-05-25 00:33:02,972 - INFO - API documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_003302.docx
+2025-05-25 00:33:02,972 - INFO - Latest version available at C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\latest\api_documentation_latest.docx
+2025-05-25 00:33:02,972 - INFO - Analysis data saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_003302.docx.json
+
+2025-05-25 00:33:03,029 - INFO - Running repo_delete.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--force')
+2025-05-25 00:33:35,943 - INFO - repo_delete.py output: 
+Repository Deleted Successfully!
+==================================================
+Archives location: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives
+Repository archives: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives\task_manager
+
+Archived folders:
+• API Documentation
+• Classifier
+• Logic Understanding
+• UAT Documentation
+
+2025-05-25 00:33:35,944 - WARNING - repo_delete.py stderr: 2025-05-25 00:33:03,253 - INFO - Archived API Documentation to API Documentation_v4_20250525_003303.zip
+2025-05-25 00:33:03,311 - INFO - Archived Classifier to Classifier_v4_20250525_003303.zip
+2025-05-25 00:33:03,330 - INFO - Archived Logic Understanding to Logic Understanding_v4_20250525_003303.zip
+2025-05-25 00:33:03,358 - INFO - Archived UAT Documentation to UAT Documentation_v4_20250525_003303.zip
+2025-05-25 00:33:03,360 - INFO - Preparing to force delete repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:33:35,869 - INFO - Removing .git directory...
+2025-05-25 00:33:35,885 - INFO - Removing repository files...
+2025-05-25 00:33:35,925 - INFO - Repository deleted successfully!
+
+2025-05-25 00:33:35,946 - INFO - Running archive_sender.py with args: ('--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mon198.app.n8n.cloud/webhook/eba0ef66', '--reference-id', 'REF15cAM')
+2025-05-25 00:34:38,367 - ERROR - Error running archive_sender.py: Command '['C:\\Python313\\python.exe', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\archive_sender.py', '--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mon198.app.n8n.cloud/webhook/eba0ef66', '--reference-id', 'REF15cAM']' returned non-zero exit status 1.
+2025-05-25 00:34:38,367 - ERROR - Script output: 2025-05-25 00:33:36,353 - INFO - Sending archives to https://mon198.app.n8n.cloud/webhook/eba0ef66
+2025-05-25 00:34:38,321 - ERROR - Failed to send archives. Status code: 404
+2025-05-25 00:34:38,321 - ERROR - Response: !
+
+2025-05-25 00:34:38,368 - ERROR - Script error: 
+2025-05-25 00:34:38,368 - WARNING - Failed to send archives, but repository processing is complete
+2025-05-25 00:34:38,369 - INFO - Repository processing completed successfully
+2025-05-25 00:36:43,054 - INFO - 127.0.0.1 - - [25/May/2025 00:36:43] "[35m[1mPOST /webhook/https://github.com/mostafa-gamal00/task_manager/REF15cAM HTTP/1.1[0m" 202 -
+2025-05-25 00:36:43,054 - INFO - Starting repository processing: https://github.com/mostafa-gamal00/task_manager.git
+2025-05-25 00:36:43,058 - INFO - Running github_repo_cloner.py with args: ('https://github.com/mostafa-gamal00/task_manager.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher')
+2025-05-25 00:36:46,470 - INFO - github_repo_cloner.py output: 
+2025-05-25 00:36:46,471 - WARNING - github_repo_cloner.py stderr: 2025-05-25 00:36:43,962 - INFO - Successfully loaded GitHub token from .env file
+2025-05-25 00:36:44,956 - INFO - Cloning repository to: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:36:46,337 - INFO - Successfully cloned repository to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+
+2025-05-25 00:36:46,472 - INFO - Running file_classifier.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:36:50,864 - INFO - file_classifier.py output: 
+Repository Classification Summary:
+==================================================
+Total Files Classified: 90
+
+Languages Found:
+- JavaScript: 3 files
+- PHP: 77 files
+
+Frameworks Found:
+- laravel: 61 files
+
+Classification results have been saved in the repository's 'Classifier' directory:
+- Latest JSON report: Classifier/file_classification_latest.json
+- Latest Word document: Classifier/file_classification_latest.docx
+
+Use --list-versions to see all classification versions
+
+2025-05-25 00:36:50,866 - WARNING - file_classifier.py stderr: 2025-05-25 00:36:47,266 - INFO - Classifying files in repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:36:50,832 - INFO - Classification results saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Classifier
+2025-05-25 00:36:50,832 - INFO - Version 1 created at 20250525_003650
+
+2025-05-25 00:36:50,867 - INFO - Running project_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:37:32,265 - INFO - project_documentation_generator.py output: 
+Project Logic Documentation Generated Successfully!
+==================================================
+Documentation file: Logic Understanding/project_logic_documentation_v1_96e7b689_20250525_003732.docx
+Latest version: Logic Understanding/project_logic_documentation_latest.docx
+
+The documentation includes:
+• Project Description
+• Core Functionality
+• Key Features
+
+2025-05-25 00:37:32,266 - WARNING - project_documentation_generator.py stderr: 2025-05-25 00:36:53,117 - INFO - Successfully initialized OpenAI client
+2025-05-25 00:36:53,118 - INFO - Generating documentation...
+2025-05-25 00:36:53,118 - INFO - Starting repository analysis: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:36:53,119 - INFO - Found application directory: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\app
+2025-05-25 00:36:53,140 - INFO - Detected framework: None
+2025-05-25 00:36:56,646 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:37:00,300 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:37:03,797 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:37:07,952 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:37:12,205 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:37:17,156 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:37:21,588 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:37:31,931 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:37:31,934 - INFO - Repository analysis complete. Analyzed 35 files
+2025-05-25 00:37:32,061 - INFO - Documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Logic Understanding\project_logic_documentation_v1_96e7b689_20250525_003732.docx
+
+2025-05-25 00:37:32,268 - INFO - Running uat_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:37:56,580 - INFO - uat_documentation_generator.py output: 
+UAT Documentation Generated Successfully!
+==================================================
+Documentation file: UAT Documentation/uat_documentation_v1_96e7b689_20250525_003756.docx
+Latest version: UAT Documentation/uat_documentation_latest.docx
+
+The documentation includes:
+• Original Project Documentation
+• Test Environments
+• Test Cases (by category)
+
+2025-05-25 00:37:56,582 - WARNING - uat_documentation_generator.py stderr: 2025-05-25 00:37:34,097 - INFO - Successfully initialized OpenAI client
+2025-05-25 00:37:34,098 - INFO - Generating UAT documentation...
+2025-05-25 00:37:34,133 - INFO - Successfully loaded project documentation
+2025-05-25 00:37:55,999 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:37:56,341 - INFO - UAT documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\UAT Documentation\uat_documentation_v1_96e7b689_20250525_003756.docx
+
+2025-05-25 00:37:56,583 - INFO - Running api_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:37:57,494 - INFO - api_documentation_generator.py output: 
+API Documentation Generated Successfully!
+==================================================
+Documentation file: API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_003757.docx
+Latest version: API Documentation/latest/api_documentation_latest.docx
+
+The documentation includes:
+• API Overview
+• Endpoints by file
+• Detailed endpoint documentation
+• Parameters and return values
+• Usage examples
+
+Analysis data is stored in:
+• API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_003757.docx.json
+
+2025-05-25 00:37:57,495 - WARNING - api_documentation_generator.py stderr: 2025-05-25 00:37:57,112 - INFO - Generating API documentation...
+2025-05-25 00:37:57,112 - INFO - Searching for route files in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes
+2025-05-25 00:37:57,113 - INFO - Found 4 PHP route files:
+2025-05-25 00:37:57,113 - INFO -   - routes\api.php
+2025-05-25 00:37:57,113 - INFO -   - routes\channels.php
+2025-05-25 00:37:57,113 - INFO -   - routes\console.php
+2025-05-25 00:37:57,113 - INFO -   - routes\web.php
+2025-05-25 00:37:57,115 - INFO - Found 19 routes in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\api.php
+2025-05-25 00:37:57,115 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\channels.php
+2025-05-25 00:37:57,116 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\console.php
+2025-05-25 00:37:57,116 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\web.php
+2025-05-25 00:37:57,445 - INFO - API documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_003757.docx
+2025-05-25 00:37:57,445 - INFO - Latest version available at C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\latest\api_documentation_latest.docx
+2025-05-25 00:37:57,446 - INFO - Analysis data saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_003757.docx.json
+
+2025-05-25 00:37:57,497 - INFO - Running repo_delete.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--force')
+2025-05-25 00:38:30,121 - INFO - repo_delete.py output: 
+Repository Deleted Successfully!
+==================================================
+Archives location: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives
+Repository archives: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives\task_manager
+
+Archived folders:
+• API Documentation
+• Classifier
+• Logic Understanding
+• UAT Documentation
+
+2025-05-25 00:38:30,123 - WARNING - repo_delete.py stderr: 2025-05-25 00:37:57,710 - INFO - Archived API Documentation to API Documentation_v5_20250525_003757.zip
+2025-05-25 00:37:57,720 - INFO - Archived Classifier to Classifier_v5_20250525_003757.zip
+2025-05-25 00:37:57,739 - INFO - Archived Logic Understanding to Logic Understanding_v5_20250525_003757.zip
+2025-05-25 00:37:57,766 - INFO - Archived UAT Documentation to UAT Documentation_v5_20250525_003757.zip
+2025-05-25 00:37:57,767 - INFO - Preparing to force delete repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:38:29,997 - INFO - Removing .git directory...
+2025-05-25 00:38:30,037 - INFO - Removing repository files...
+2025-05-25 00:38:30,100 - INFO - Repository deleted successfully!
+
+2025-05-25 00:38:30,125 - INFO - Running archive_sender.py with args: ('--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mon198.app.n8n.cloud/webhook/eba0ef66', '--reference-id', 'REF15cAM')
+2025-05-25 00:39:33,431 - ERROR - Error running archive_sender.py: Command '['C:\\Python313\\python.exe', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\archive_sender.py', '--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mon198.app.n8n.cloud/webhook/eba0ef66', '--reference-id', 'REF15cAM']' returned non-zero exit status 1.
+2025-05-25 00:39:33,432 - ERROR - Script output: 2025-05-25 00:38:30,644 - INFO - Sending archives to https://mon198.app.n8n.cloud/webhook/eba0ef66
+2025-05-25 00:39:33,398 - ERROR - Failed to send archives. Status code: 404
+2025-05-25 00:39:33,399 - ERROR - Response: !
+
+2025-05-25 00:39:33,432 - ERROR - Script error: 
+2025-05-25 00:39:33,432 - WARNING - Failed to send archives, but repository processing is complete
+2025-05-25 00:39:33,433 - INFO - Repository processing completed successfully
+2025-05-25 00:42:16,196 - INFO - Starting repository processing: https://github.com/username/repo.git
+2025-05-25 00:42:16,196 - INFO - Running github_repo_cloner.py with args: ('https://github.com/username/repo.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher')
+2025-05-25 00:42:18,017 - ERROR - Error running github_repo_cloner.py: Command '['C:\\Python313\\python.exe', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\github_repo_cloner.py', 'https://github.com/username/repo.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher']' returned non-zero exit status 1.
+2025-05-25 00:42:18,018 - ERROR - Script output: 
+2025-05-25 00:42:18,018 - ERROR - Script error: 2025-05-25 00:42:17,087 - INFO - Successfully loaded GitHub token from .env file
+2025-05-25 00:42:17,961 - ERROR - Repository not found
+
+2025-05-25 00:44:19,335 - INFO - Starting repository processing: https://github.com/username/repo.git
+2025-05-25 00:44:19,335 - INFO - Running github_repo_cloner.py with args: ('https://github.com/username/repo.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher')
+2025-05-25 00:44:21,150 - ERROR - Error running github_repo_cloner.py: Command '['C:\\Python313\\python.exe', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\github_repo_cloner.py', 'https://github.com/username/repo.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher']' returned non-zero exit status 1.
+2025-05-25 00:44:21,150 - ERROR - Script output: 
+2025-05-25 00:44:21,151 - ERROR - Script error: 2025-05-25 00:44:20,106 - INFO - Successfully loaded GitHub token from .env file
+2025-05-25 00:44:21,081 - ERROR - Repository not found
+
+2025-05-25 00:52:47,903 - INFO - 127.0.0.1 - - [25/May/2025 00:52:47] "[35m[1mPOST /webhook/https://github.com/mostafa-gamal00/task_manager/REF15cAM HTTP/1.1[0m" 202 -
+2025-05-25 00:52:47,904 - INFO - Starting repository processing: https://github.com/mostafa-gamal00/task_manager.git
+2025-05-25 00:52:47,907 - INFO - Running github_repo_cloner.py with args: ('https://github.com/mostafa-gamal00/task_manager.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher')
+2025-05-25 00:52:50,978 - INFO - github_repo_cloner.py output: 
+2025-05-25 00:52:50,978 - WARNING - github_repo_cloner.py stderr: 2025-05-25 00:52:48,573 - INFO - Successfully loaded GitHub token from .env file
+2025-05-25 00:52:49,470 - INFO - Cloning repository to: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:52:50,825 - INFO - Successfully cloned repository to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+
+2025-05-25 00:52:50,980 - INFO - Running file_classifier.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:52:54,711 - INFO - file_classifier.py output: 
+Repository Classification Summary:
+==================================================
+Total Files Classified: 90
+
+Languages Found:
+- JavaScript: 3 files
+- PHP: 77 files
+
+Frameworks Found:
+- laravel: 61 files
+
+Classification results have been saved in the repository's 'Classifier' directory:
+- Latest JSON report: Classifier/file_classification_latest.json
+- Latest Word document: Classifier/file_classification_latest.docx
+
+Use --list-versions to see all classification versions
+
+2025-05-25 00:52:54,713 - WARNING - file_classifier.py stderr: 2025-05-25 00:52:51,588 - INFO - Classifying files in repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:52:54,684 - INFO - Classification results saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Classifier
+2025-05-25 00:52:54,684 - INFO - Version 1 created at 20250525_005254
+
+2025-05-25 00:52:54,714 - INFO - Running project_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:52:57,234 - INFO - Starting webhook server on port 5000
+2025-05-25 00:52:57,267 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.10:5000
+2025-05-25 00:52:57,269 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-25 00:53:21,655 - INFO - 127.0.0.1 - - [25/May/2025 00:53:21] "[35m[1mPOST /webhook/https://github.com/mostafa-gamal00/task_manager/REF15cAM HTTP/1.1[0m" 202 -
+2025-05-25 00:53:41,655 - INFO - project_documentation_generator.py output: 
+Project Logic Documentation Generated Successfully!
+==================================================
+Documentation file: Logic Understanding/project_logic_documentation_v1_96e7b689_20250525_005341.docx
+Latest version: Logic Understanding/project_logic_documentation_latest.docx
+
+The documentation includes:
+• Project Description
+• Core Functionality
+• Key Features
+
+2025-05-25 00:53:41,656 - WARNING - project_documentation_generator.py stderr: 2025-05-25 00:52:56,668 - INFO - Successfully initialized OpenAI client
+2025-05-25 00:52:56,669 - INFO - Generating documentation...
+2025-05-25 00:52:56,669 - INFO - Starting repository analysis: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:52:56,670 - INFO - Found application directory: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\app
+2025-05-25 00:52:56,691 - INFO - Detected framework: None
+2025-05-25 00:53:00,193 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:53:04,506 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:53:09,095 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:53:14,567 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:53:18,254 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:53:22,248 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:53:28,382 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:53:41,300 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:53:41,303 - INFO - Repository analysis complete. Analyzed 35 files
+2025-05-25 00:53:41,446 - INFO - Documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Logic Understanding\project_logic_documentation_v1_96e7b689_20250525_005341.docx
+
+2025-05-25 00:53:41,659 - INFO - Running uat_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:53:58,496 - INFO - 127.0.0.1 - - [25/May/2025 00:53:58] "[35m[1mPOST /webhook/https://github.com/mostafa-gamal00/task_manager/REF15cAM HTTP/1.1[0m" 202 -
+2025-05-25 00:54:18,203 - INFO - uat_documentation_generator.py output: 
+UAT Documentation Generated Successfully!
+==================================================
+Documentation file: UAT Documentation/uat_documentation_v1_96e7b689_20250525_005417.docx
+Latest version: UAT Documentation/uat_documentation_latest.docx
+
+The documentation includes:
+• Original Project Documentation
+• Test Environments
+• Test Cases (by category)
+
+2025-05-25 00:54:18,204 - WARNING - uat_documentation_generator.py stderr: 2025-05-25 00:53:43,576 - INFO - Successfully initialized OpenAI client
+2025-05-25 00:53:43,577 - INFO - Generating UAT documentation...
+2025-05-25 00:53:43,602 - INFO - Successfully loaded project documentation
+2025-05-25 00:54:17,562 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:54:17,985 - INFO - UAT documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\UAT Documentation\uat_documentation_v1_96e7b689_20250525_005417.docx
+
+2025-05-25 00:54:18,206 - INFO - Running api_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:54:18,918 - INFO - api_documentation_generator.py output: 
+API Documentation Generated Successfully!
+==================================================
+Documentation file: API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_005418.docx
+Latest version: API Documentation/latest/api_documentation_latest.docx
+
+The documentation includes:
+• API Overview
+• Endpoints by file
+• Detailed endpoint documentation
+• Parameters and return values
+• Usage examples
+
+Analysis data is stored in:
+• API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_005418.docx.json
+
+2025-05-25 00:54:18,919 - WARNING - api_documentation_generator.py stderr: 2025-05-25 00:54:18,623 - INFO - Generating API documentation...
+2025-05-25 00:54:18,623 - INFO - Searching for route files in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes
+2025-05-25 00:54:18,623 - INFO - Found 4 PHP route files:
+2025-05-25 00:54:18,623 - INFO -   - routes\api.php
+2025-05-25 00:54:18,623 - INFO -   - routes\channels.php
+2025-05-25 00:54:18,624 - INFO -   - routes\console.php
+2025-05-25 00:54:18,624 - INFO -   - routes\web.php
+2025-05-25 00:54:18,626 - INFO - Found 19 routes in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\api.php
+2025-05-25 00:54:18,626 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\channels.php
+2025-05-25 00:54:18,626 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\console.php
+2025-05-25 00:54:18,627 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\web.php
+2025-05-25 00:54:18,877 - INFO - API documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_005418.docx
+2025-05-25 00:54:18,877 - INFO - Latest version available at C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\latest\api_documentation_latest.docx
+2025-05-25 00:54:18,877 - INFO - Analysis data saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_005418.docx.json
+
+2025-05-25 00:54:18,922 - INFO - Running repo_delete.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--force')
+2025-05-25 00:54:51,106 - INFO - repo_delete.py output: 
+Repository Deleted Successfully!
+==================================================
+Archives location: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives
+Repository archives: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives\task_manager
+
+Archived folders:
+• API Documentation
+• Classifier
+• Logic Understanding
+• UAT Documentation
+
+2025-05-25 00:54:51,108 - WARNING - repo_delete.py stderr: 2025-05-25 00:54:19,093 - INFO - Archived API Documentation to API Documentation_v6_20250525_005419.zip
+2025-05-25 00:54:19,141 - INFO - Archived Classifier to Classifier_v6_20250525_005419.zip
+2025-05-25 00:54:19,156 - INFO - Archived Logic Understanding to Logic Understanding_v6_20250525_005419.zip
+2025-05-25 00:54:19,183 - INFO - Archived UAT Documentation to UAT Documentation_v6_20250525_005419.zip
+2025-05-25 00:54:19,184 - INFO - Preparing to force delete repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:54:51,027 - INFO - Removing .git directory...
+2025-05-25 00:54:51,042 - INFO - Removing repository files...
+2025-05-25 00:54:51,085 - INFO - Repository deleted successfully!
+
+2025-05-25 00:54:51,109 - INFO - Running archive_sender.py with args: ('--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mon198.app.n8n.cloud/webhook/eba0ef66', '--reference-id', 'REF15cAM')
+2025-05-25 00:54:53,593 - ERROR - Error running archive_sender.py: Command '['C:\\Python313\\python.exe', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\archive_sender.py', '--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mon198.app.n8n.cloud/webhook/eba0ef66', '--reference-id', 'REF15cAM']' returned non-zero exit status 1.
+2025-05-25 00:54:53,594 - ERROR - Script output: 2025-05-25 00:54:51,689 - INFO - Sending archives to https://mon198.app.n8n.cloud/webhook/eba0ef66
+2025-05-25 00:54:53,553 - ERROR - Failed to send archives. Status code: 404
+2025-05-25 00:54:53,553 - ERROR - Response: {"code":404,"message":"The requested webhook \"POST eba0ef66\" is not registered.","hint":"The workflow must be active for a production URL to run successfully. You can activate the workflow using the toggle in the top-right of the editor. Note that unlike test URL calls, production URL calls aren't shown on the canvas (only in the executions list)"}
+
+2025-05-25 00:54:53,595 - ERROR - Script error: 
+2025-05-25 00:54:53,595 - WARNING - Failed to send archives, but repository processing is complete
+2025-05-25 00:54:53,596 - INFO - Repository processing completed successfully
+2025-05-25 00:54:54,597 - INFO - Starting repository processing: https://github.com/mostafa-gamal00/task_manager.git
+2025-05-25 00:54:54,600 - INFO - Running github_repo_cloner.py with args: ('https://github.com/mostafa-gamal00/task_manager.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher')
+2025-05-25 00:54:58,002 - INFO - github_repo_cloner.py output: 
+2025-05-25 00:54:58,002 - WARNING - github_repo_cloner.py stderr: 2025-05-25 00:54:55,362 - INFO - Successfully loaded GitHub token from .env file
+2025-05-25 00:54:56,440 - INFO - Cloning repository to: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:54:57,936 - INFO - Successfully cloned repository to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+
+2025-05-25 00:54:58,003 - INFO - Running file_classifier.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:55:01,108 - INFO - file_classifier.py output: 
+Repository Classification Summary:
+==================================================
+Total Files Classified: 90
+
+Languages Found:
+- JavaScript: 3 files
+- PHP: 77 files
+
+Frameworks Found:
+- laravel: 61 files
+
+Classification results have been saved in the repository's 'Classifier' directory:
+- Latest JSON report: Classifier/file_classification_latest.json
+- Latest Word document: Classifier/file_classification_latest.docx
+
+Use --list-versions to see all classification versions
+
+2025-05-25 00:55:01,110 - WARNING - file_classifier.py stderr: 2025-05-25 00:54:58,448 - INFO - Classifying files in repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:55:01,081 - INFO - Classification results saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Classifier
+2025-05-25 00:55:01,081 - INFO - Version 1 created at 20250525_005500
+
+2025-05-25 00:55:01,111 - INFO - Running project_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:55:52,420 - INFO - project_documentation_generator.py output: 
+Project Logic Documentation Generated Successfully!
+==================================================
+Documentation file: Logic Understanding/project_logic_documentation_v1_96e7b689_20250525_005552.docx
+Latest version: Logic Understanding/project_logic_documentation_latest.docx
+
+The documentation includes:
+• Project Description
+• Core Functionality
+• Key Features
+
+2025-05-25 00:55:52,421 - WARNING - project_documentation_generator.py stderr: 2025-05-25 00:55:03,044 - INFO - Successfully initialized OpenAI client
+2025-05-25 00:55:03,046 - INFO - Generating documentation...
+2025-05-25 00:55:03,046 - INFO - Starting repository analysis: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:55:03,046 - INFO - Found application directory: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\app
+2025-05-25 00:55:03,070 - INFO - Detected framework: None
+2025-05-25 00:55:08,291 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:55:12,761 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:55:18,068 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:55:23,644 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:55:27,382 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:55:31,145 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:55:35,701 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:55:52,082 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:55:52,085 - INFO - Repository analysis complete. Analyzed 35 files
+2025-05-25 00:55:52,223 - INFO - Documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Logic Understanding\project_logic_documentation_v1_96e7b689_20250525_005552.docx
+
+2025-05-25 00:55:52,424 - INFO - Running uat_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:56:17,394 - INFO - uat_documentation_generator.py output: 
+UAT Documentation Generated Successfully!
+==================================================
+Documentation file: UAT Documentation/uat_documentation_v1_96e7b689_20250525_005617.docx
+Latest version: UAT Documentation/uat_documentation_latest.docx
+
+The documentation includes:
+• Original Project Documentation
+• Test Environments
+• Test Cases (by category)
+
+2025-05-25 00:56:17,396 - WARNING - uat_documentation_generator.py stderr: 2025-05-25 00:55:54,458 - INFO - Successfully initialized OpenAI client
+2025-05-25 00:55:54,460 - INFO - Generating UAT documentation...
+2025-05-25 00:55:54,490 - INFO - Successfully loaded project documentation
+2025-05-25 00:56:16,856 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 00:56:17,159 - INFO - UAT documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\UAT Documentation\uat_documentation_v1_96e7b689_20250525_005617.docx
+
+2025-05-25 00:56:17,398 - INFO - Running api_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 00:56:18,183 - INFO - api_documentation_generator.py output: 
+API Documentation Generated Successfully!
+==================================================
+Documentation file: API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_005618.docx
+Latest version: API Documentation/latest/api_documentation_latest.docx
+
+The documentation includes:
+• API Overview
+• Endpoints by file
+• Detailed endpoint documentation
+• Parameters and return values
+• Usage examples
+
+Analysis data is stored in:
+• API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_005618.docx.json
+
+2025-05-25 00:56:18,185 - WARNING - api_documentation_generator.py stderr: 2025-05-25 00:56:17,851 - INFO - Generating API documentation...
+2025-05-25 00:56:17,852 - INFO - Searching for route files in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes
+2025-05-25 00:56:17,852 - INFO - Found 4 PHP route files:
+2025-05-25 00:56:17,852 - INFO -   - routes\api.php
+2025-05-25 00:56:17,852 - INFO -   - routes\channels.php
+2025-05-25 00:56:17,852 - INFO -   - routes\console.php
+2025-05-25 00:56:17,852 - INFO -   - routes\web.php
+2025-05-25 00:56:17,854 - INFO - Found 19 routes in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\api.php
+2025-05-25 00:56:17,854 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\channels.php
+2025-05-25 00:56:17,855 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\console.php
+2025-05-25 00:56:17,855 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\web.php
+2025-05-25 00:56:18,135 - INFO - API documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_005618.docx
+2025-05-25 00:56:18,135 - INFO - Latest version available at C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\latest\api_documentation_latest.docx
+2025-05-25 00:56:18,135 - INFO - Analysis data saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_005618.docx.json
+
+2025-05-25 00:56:18,188 - INFO - Running repo_delete.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--force')
+2025-05-25 00:56:52,713 - INFO - repo_delete.py output: 
+Repository Deleted Successfully!
+==================================================
+Archives location: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives
+Repository archives: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives\task_manager
+
+Archived folders:
+• API Documentation
+• Classifier
+• Logic Understanding
+• UAT Documentation
+
+2025-05-25 00:56:52,715 - WARNING - repo_delete.py stderr: 2025-05-25 00:56:18,384 - INFO - Archived API Documentation to API Documentation_v7_20250525_005618.zip
+2025-05-25 00:56:18,439 - INFO - Archived Classifier to Classifier_v7_20250525_005618.zip
+2025-05-25 00:56:18,457 - INFO - Archived Logic Understanding to Logic Understanding_v7_20250525_005618.zip
+2025-05-25 00:56:18,486 - INFO - Archived UAT Documentation to UAT Documentation_v7_20250525_005618.zip
+2025-05-25 00:56:18,486 - INFO - Preparing to force delete repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 00:56:52,621 - INFO - Removing .git directory...
+2025-05-25 00:56:52,639 - INFO - Removing repository files...
+2025-05-25 00:56:52,691 - INFO - Repository deleted successfully!
+
+2025-05-25 00:56:52,717 - INFO - Running archive_sender.py with args: ('--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--webhook-url', 'https://mon198.app.n8n.cloud/webhook/eba0ef66', '--reference-id', 'REF15cAM')
+2025-05-25 01:01:06,083 - INFO - Starting webhook server on port 5000
+2025-05-25 01:01:06,106 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.10:5000
+2025-05-25 01:01:06,106 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-25 01:01:14,907 - INFO - 127.0.0.1 - - [25/May/2025 01:01:14] "[35m[1mPOST /webhook/https://github.com/mostafa-gamal00/task_manager/REF15cAM HTTP/1.1[0m" 202 -
+2025-05-25 01:01:14,907 - INFO - Starting repository processing: https://github.com/mostafa-gamal00/task_manager.git
+2025-05-25 01:01:14,910 - INFO - Running github_repo_cloner.py with args: ('https://github.com/mostafa-gamal00/task_manager.git', '--target-dir', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher')
+2025-05-25 01:01:18,089 - INFO - github_repo_cloner.py output: 
+2025-05-25 01:01:18,089 - WARNING - github_repo_cloner.py stderr: 2025-05-25 01:01:15,650 - INFO - Successfully loaded GitHub token from .env file
+2025-05-25 01:01:16,554 - INFO - Cloning repository to: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 01:01:17,952 - INFO - Successfully cloned repository to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+
+2025-05-25 01:01:18,091 - INFO - Running file_classifier.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 01:01:22,367 - INFO - file_classifier.py output: 
+Repository Classification Summary:
+==================================================
+Total Files Classified: 90
+
+Languages Found:
+- JavaScript: 3 files
+- PHP: 77 files
+
+Frameworks Found:
+- laravel: 61 files
+
+Classification results have been saved in the repository's 'Classifier' directory:
+- Latest JSON report: Classifier/file_classification_latest.json
+- Latest Word document: Classifier/file_classification_latest.docx
+
+Use --list-versions to see all classification versions
+
+2025-05-25 01:01:22,368 - WARNING - file_classifier.py stderr: 2025-05-25 01:01:18,771 - INFO - Classifying files in repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 01:01:22,337 - INFO - Classification results saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Classifier
+2025-05-25 01:01:22,337 - INFO - Version 1 created at 20250525_010121
+
+2025-05-25 01:01:22,369 - INFO - Running project_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 01:02:13,699 - INFO - project_documentation_generator.py output: 
+Project Logic Documentation Generated Successfully!
+==================================================
+Documentation file: Logic Understanding/project_logic_documentation_v1_96e7b689_20250525_010213.docx
+Latest version: Logic Understanding/project_logic_documentation_latest.docx
+
+The documentation includes:
+• Project Description
+• Core Functionality
+• Key Features
+
+2025-05-25 01:02:13,700 - WARNING - project_documentation_generator.py stderr: 2025-05-25 01:01:24,493 - INFO - Successfully initialized OpenAI client
+2025-05-25 01:01:24,495 - INFO - Generating documentation...
+2025-05-25 01:01:24,495 - INFO - Starting repository analysis: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 01:01:24,495 - INFO - Found application directory: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\app
+2025-05-25 01:01:24,516 - INFO - Detected framework: None
+2025-05-25 01:01:27,833 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 01:01:31,740 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 01:01:34,981 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 01:01:39,489 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 01:01:43,174 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 01:01:46,605 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 01:01:50,362 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 01:02:13,355 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 01:02:13,357 - INFO - Repository analysis complete. Analyzed 35 files
+2025-05-25 01:02:13,495 - INFO - Documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\Logic Understanding\project_logic_documentation_v1_96e7b689_20250525_010213.docx
+
+2025-05-25 01:02:13,702 - INFO - Running uat_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 01:02:50,011 - INFO - uat_documentation_generator.py output: 
+UAT Documentation Generated Successfully!
+==================================================
+Documentation file: UAT Documentation/uat_documentation_v1_96e7b689_20250525_010249.docx
+Latest version: UAT Documentation/uat_documentation_latest.docx
+
+The documentation includes:
+• Original Project Documentation
+• Test Environments
+• Test Cases (by category)
+
+2025-05-25 01:02:50,013 - WARNING - uat_documentation_generator.py stderr: 2025-05-25 01:02:15,897 - INFO - Successfully initialized OpenAI client
+2025-05-25 01:02:15,899 - INFO - Generating UAT documentation...
+2025-05-25 01:02:15,949 - INFO - Successfully loaded project documentation
+2025-05-25 01:02:49,097 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-25 01:02:49,777 - INFO - UAT documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\UAT Documentation\uat_documentation_v1_96e7b689_20250525_010249.docx
+
+2025-05-25 01:02:50,014 - INFO - Running api_documentation_generator.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager',)
+2025-05-25 01:02:50,955 - INFO - api_documentation_generator.py output: 
+API Documentation Generated Successfully!
+==================================================
+Documentation file: API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_010250.docx
+Latest version: API Documentation/latest/api_documentation_latest.docx
+
+The documentation includes:
+• API Overview
+• Endpoints by file
+• Detailed endpoint documentation
+• Parameters and return values
+• Usage examples
+
+Analysis data is stored in:
+• API Documentation/versions/api_documentation_v1.0.0_main_96e7b689_20250525_010250.docx.json
+
+2025-05-25 01:02:50,956 - WARNING - api_documentation_generator.py stderr: 2025-05-25 01:02:50,504 - INFO - Generating API documentation...
+2025-05-25 01:02:50,505 - INFO - Searching for route files in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes
+2025-05-25 01:02:50,520 - INFO - Found 4 PHP route files:
+2025-05-25 01:02:50,521 - INFO -   - routes\api.php
+2025-05-25 01:02:50,521 - INFO -   - routes\channels.php
+2025-05-25 01:02:50,521 - INFO -   - routes\console.php
+2025-05-25 01:02:50,522 - INFO -   - routes\web.php
+2025-05-25 01:02:50,528 - INFO - Found 19 routes in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\api.php
+2025-05-25 01:02:50,529 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\channels.php
+2025-05-25 01:02:50,529 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\console.php
+2025-05-25 01:02:50,530 - WARNING - No routes found in C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\routes\web.php
+2025-05-25 01:02:50,908 - INFO - API documentation saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_010250.docx
+2025-05-25 01:02:50,908 - INFO - Latest version available at C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\latest\api_documentation_latest.docx
+2025-05-25 01:02:50,908 - INFO - Analysis data saved to C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager\API Documentation\versions\api_documentation_v1.0.0_main_96e7b689_20250525_010250.docx.json
+
+2025-05-25 01:02:50,958 - INFO - Running archive_sender.py with args: ('--repo', 'task_manager', '--repo-path', 'C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--reference-id', 'REF15cAM')
+2025-05-25 01:02:53,199 - INFO - archive_sender.py output: 2025-05-25 01:02:51,347 - INFO - Sending archives to https://mon198.app.n8n.cloud/webhook-test/aq
+2025-05-25 01:02:53,164 - INFO - Archives sent successfully
+
+2025-05-25 01:02:53,200 - INFO - Running repo_delete.py with args: ('C:\\Users\\moh16\\OneDrive\\Desktop\\AI_Github\\Github_Repo_Fetcher\\task_manager', '--force')
+2025-05-25 01:03:25,499 - INFO - repo_delete.py output: 
+Repository Deleted Successfully!
+==================================================
+Archives location: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives
+Repository archives: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\Archives\task_manager
+
+Archived folders:
+• API Documentation
+• Classifier
+• Logic Understanding
+• UAT Documentation
+
+2025-05-25 01:03:25,500 - WARNING - repo_delete.py stderr: 2025-05-25 01:02:53,456 - INFO - Archived API Documentation to API Documentation_v8_20250525_010253.zip
+2025-05-25 01:02:53,472 - INFO - Archived Classifier to Classifier_v8_20250525_010253.zip
+2025-05-25 01:02:53,508 - INFO - Archived Logic Understanding to Logic Understanding_v8_20250525_010253.zip
+2025-05-25 01:02:53,576 - INFO - Archived UAT Documentation to UAT Documentation_v8_20250525_010253.zip
+2025-05-25 01:02:53,577 - INFO - Preparing to force delete repository: C:\Users\moh16\OneDrive\Desktop\AI_Github\Github_Repo_Fetcher\task_manager
+2025-05-25 01:03:25,417 - INFO - Removing .git directory...
+2025-05-25 01:03:25,442 - INFO - Removing repository files...
+2025-05-25 01:03:25,482 - INFO - Repository deleted successfully!
+
+2025-05-25 01:03:25,501 - INFO - Repository processing completed successfully
