@@ -1,0 +1,141 @@
+{
+  "name": "Github_Doc_TO_Task",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "aq",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -120,
+        0
+      ],
+      "id": "26831602-2973-4dbb-98a7-b1a8808fb8c7",
+      "name": "Webhook",
+      "webhookId": "59e80560-b456-4ac3-a4ef-472d7f7a2efe"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "operation": "update",
+        "id": "=86994apqe",
+        "updateFields": {
+          "content": ""
+        }
+      },
+      "type": "n8n-nodes-base.clickUp",
+      "typeVersion": 1,
+      "position": [
+        300,
+        0
+      ],
+      "id": "64a9ac49-fd4a-4fef-9257-b28c51a812b8",
+      "name": "ClickUp",
+      "credentials": {
+        "clickUpOAuth2Api": {
+          "id": "kYFMitkLz43ONpG8",
+          "name": "ClickUp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "root",
+          "cachedResultName": "/ (Root folder)"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        100,
+        0
+      ],
+      "id": "a63cab8e-d482-4265-bf2e-d162c3c6e285",
+      "name": "Google Drive"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "taskTag",
+        "operation": "remove",
+        "taskId": "86994apqe",
+        "tagName": "uat",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.clickUp",
+      "typeVersion": 1,
+      "position": [
+        520,
+        0
+      ],
+      "id": "6bb7d217-8243-440c-8cfe-a51ffa78efad",
+      "name": "ClickUp1",
+      "credentials": {
+        "clickUpOAuth2Api": {
+          "id": "kYFMitkLz43ONpG8",
+          "name": "ClickUp account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Google Drive",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ClickUp": {
+      "main": [
+        [
+          {
+            "node": "ClickUp1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive": {
+      "main": [
+        [
+          {
+            "node": "ClickUp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "3fc8a550-94ca-4bdf-9c59-bc5306e4ac99",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1ac066a753024ce08d07a00873869cbdd1f091f68762d2c71614d7e672d7b99d"
+  },
+  "id": "uxJhXv8fxxeeUIlY",
+  "tags": []
+}

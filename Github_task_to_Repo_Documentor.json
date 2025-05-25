@@ -1,0 +1,176 @@
+{
+  "name": "Github_task_to_Repo_Documentor",
+  "nodes": [
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "team": "9012800958",
+        "events": [
+          "taskTagUpdated"
+        ],
+        "filters": {}
+      },
+      "type": "n8n-nodes-base.clickUpTrigger",
+      "typeVersion": 1,
+      "position": [
+        -400,
+        -120
+      ],
+      "id": "b59900f0-8508-4904-8e8a-07a789e3dfcb",
+      "name": "ClickUp Trigger",
+      "webhookId": "8b604fb6-40ce-497f-9f8e-574fec75542a",
+      "credentials": {
+        "clickUpOAuth2Api": {
+          "id": "kYFMitkLz43ONpG8",
+          "name": "ClickUp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "operation": "get",
+        "id": "={{ $json.task_id }}"
+      },
+      "type": "n8n-nodes-base.clickUp",
+      "typeVersion": 1,
+      "position": [
+        -180,
+        -120
+      ],
+      "id": "770aa515-9877-44a2-a61b-7aaea586ae47",
+      "name": "ClickUp",
+      "credentials": {
+        "clickUpOAuth2Api": {
+          "id": "kYFMitkLz43ONpG8",
+          "name": "ClickUp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:5000/webhook/",
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "={{ $json.custom_fields[0].name }}/{{ $json.id }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        40,
+        -120
+      ],
+      "id": "4e195ccc-e44d-4615-ac00-49ac201ba71b",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "team": "9012800958",
+        "events": [
+          "taskTagUpdated"
+        ],
+        "filters": {}
+      },
+      "type": "n8n-nodes-base.clickUpTrigger",
+      "typeVersion": 1,
+      "position": [
+        -400,
+        -280
+      ],
+      "id": "f01ab8c6-03dc-407d-84b2-ed1d847ae72f",
+      "name": "ClickUp Trigger1",
+      "webhookId": "8b604fb6-40ce-497f-9f8e-574fec75542a",
+      "credentials": {
+        "clickUpOAuth2Api": {
+          "id": "kYFMitkLz43ONpG8",
+          "name": "ClickUp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "team": "9012800958",
+        "events": [
+          "taskTagUpdated"
+        ],
+        "filters": {}
+      },
+      "type": "n8n-nodes-base.clickUpTrigger",
+      "typeVersion": 1,
+      "position": [
+        -400,
+        60
+      ],
+      "id": "97458ed1-0054-4be9-8c39-3e83adfd87e0",
+      "name": "ClickUp Trigger2",
+      "webhookId": "8b604fb6-40ce-497f-9f8e-574fec75542a",
+      "credentials": {
+        "clickUpOAuth2Api": {
+          "id": "kYFMitkLz43ONpG8",
+          "name": "ClickUp account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "ClickUp Trigger": {
+      "main": [
+        [
+          {
+            "node": "ClickUp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ClickUp": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ClickUp Trigger1": {
+      "main": [
+        [
+          {
+            "node": "ClickUp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ClickUp Trigger2": {
+      "main": [
+        [
+          {
+            "node": "ClickUp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "ea24866b-336f-43eb-940c-7e8607617248",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1ac066a753024ce08d07a00873869cbdd1f091f68762d2c71614d7e672d7b99d"
+  },
+  "id": "3mlNBAJT03oFVRzd",
+  "tags": []
+}
